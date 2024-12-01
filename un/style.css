@@ -1080,25 +1080,29 @@ p a {
     padding-bottom: 100% !important;
   }
 
-  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message {
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message * {
     font-size: 36px !important;
   }
 }
 
 @media screen and (min-width: 980px) {
-  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message {
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message * {
     font-size: 24px !important;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message {
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message * {
     font-size: 28px !important;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message {
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
+  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message * {
     font-size: 36px !important;
   }
 }
