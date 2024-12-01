@@ -2,7 +2,7 @@
  * united nations peace and security stylesheet
  * -------------------------------------------------------------------------------*/
 .property_home_page_section_first,
-.property_home_page_section:first-of-type {
+.property_home_page_section_first + .property_home_page_section {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
