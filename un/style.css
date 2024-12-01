@@ -1,10 +1,6 @@
 /* -------------------------------------------------------------------------------
  * united nations peace and security stylesheet
  * -------------------------------------------------------------------------------*/
-html {
-/*	overflow-x: hidden !important;*/
-}
-
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
@@ -118,21 +114,21 @@ p a {
 	border-bottom: dotted 0.1rem #454545;
 }
 
-	p a:hover, 
-	p a:focus {
-		color: #009edb;
-		border-bottom: solid 0.1rem #009edb;
-	}
+p a:hover, 
+p a:focus {
+	color: #009edb;
+	border-bottom: solid 0.1rem #009edb;
+}
 
 .blue-background p a {
 	border-bottom: dotted 0.1rem #fff;
 }
 
-	p a:hover, 
-	p a:focus {
-		color: #009edb;
-		border-bottom: solid 0.1rem #009edb;
-	}
+p a:hover, 
+p a:focus {
+	color: #009edb;
+	border-bottom: solid 0.1rem #009edb;
+}
 
 @media screen and (min-width: 769px) {
 	h3 {
@@ -320,7 +316,7 @@ p a {
 .content-container .unodc-link .unodc-content p,
 .content-container .unodc-link .unodc-content p strong {
 	line-height: 1.4 !important;
-	 font-size: 16px !important;
+	font-size: 16px !important;
 	font-size: 1.6rem !important;
 }
 
@@ -346,21 +342,21 @@ p a {
 
   .content-container .unodc-link .unodc-content p,
   .content-container .unodc-link .unodc-content p strong {
-  	margin-top: 0;
-  	 font-size: 20px !important;
-	font-size: 2rem !important;
+		margin-top: 0;
+		font-size: 20px !important;
+		font-size: 2rem !important;
   }
 }
 
 @media screen and (min-width: 1351px) {
   .content-container .unodc-link {
-  	margin-top: 0 !important;
-  	border: 1px solid #ddd;
-  	position: absolute;
-  	top: 0;
-  	left: calc((100vw + 800px) / 2 + 16px);
-  	max-width: 240px;
-  	flex-direction: column;
+		margin-top: 0 !important;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: 0;
+		left: calc((100vw + 800px) / 2 + 16px);
+		max-width: 240px;
+		flex-direction: column;
   }
 
   .content-container .unodc-link img {
@@ -1042,12 +1038,8 @@ p a {
 		width: 45% !important;
 	}
 }
-</style>
-<!-- fact cards --><!-- import google font 'robot slab' -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&amp;display=swap" rel="stylesheet"><!-- fact card stylesheet -->
-<style type="text/css">/* reset */
+
+/* fact card reset */
 .fact-card div,
 .fact-card span,
 .fact-card p,
@@ -1077,7 +1069,8 @@ p a {
 .fact-card .fact-card-wrapper .fact-card-inner * {
   box-sizing: border-box !important;
 }
-/* end reset */
+/* end fact card reset */
+
 /* fact card css */
 .fact-card {
   position: relative !important;
