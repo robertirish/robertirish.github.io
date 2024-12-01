@@ -693,7 +693,11 @@ p a {
     height: 133.3333333%;
   }
 
-  .parallax-inner.size-120 {
+  .parallax-inner.size-110 {
+    height: 110%;
+  }
+
+	.parallax-inner.size-120 {
     height: 120%;
   }
 }
