@@ -615,6 +615,11 @@ p a:focus {
 	padding-right: 16px !important;
 }
 
+.events-banner .event-block .event-text .event-title a:hover,
+.events-banner .event-block .event-text .event-title a:focus {
+	color: #009edb !important;
+}
+
 .events-banner .event-block .event-text .event-description,
 .events-banner .event-block .event-text .event-date {
 	display: block;
