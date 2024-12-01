@@ -186,6 +186,8 @@ p a {
 
 .content-container {
 	position: relative;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 .content-container.no-padding-top {
