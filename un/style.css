@@ -547,6 +547,11 @@ p a {
 	width: 100%;
 }
 
+.events-banner .event-block a {
+  border-bottom: none !important;
+  color: inherit !important;
+}
+
 .events-banner .event-block + .event-block {
 	margin-top: 32px !important;
 }
@@ -602,6 +607,7 @@ p a {
 
 .events-banner .event-block .event-text .event-date {
 	padding-top: 16px;
+	margin-bottom: 0;
 }
 
 .events-banner .event-block .event-text .event-date {
@@ -790,6 +796,8 @@ p a {
 	}
 
 	.feature-block-banner.three-stories .feature-block-banner-sub .feature-block .feature-block-banner-image {
+		margin-top: 24px;
+		margin-left: 16px;
 		padding-bottom: 33.3333333% !important;
 	}
 
