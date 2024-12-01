@@ -7,6 +7,12 @@
 	margin-bottom: 0 !important;
 }
 
+.property_home_page_section:nth-of-type(2),
+.property_home_page_section:nth-of-type(3),
+.property_home_page_section:nth-of-type(4) {
+	display: none !important;
+}
+
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
