@@ -203,6 +203,8 @@ p a {
 }
 
 .content-container.content-container-narrow {
+	margin-left: auto !important;
+	margin-right: auto !important;
 	max-width: 1350px !important;
 }
 
