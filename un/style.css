@@ -7,9 +7,9 @@
 	margin-bottom: 0 !important;
 }
 
-.property_home_page_section:nth-of-type(2),
 .property_home_page_section:nth-of-type(3),
-.property_home_page_section:nth-of-type(4) {
+.property_home_page_section:nth-of-type(4),
+.property_home_page_section:nth-of-type(5) {
 	display: none !important;
 }
 
