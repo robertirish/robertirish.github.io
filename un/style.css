@@ -202,6 +202,10 @@ p a {
 	margin-top: 40px !important;
 }
 
+.content-container.content-container-narrow {
+	max-width: 1350px !important;
+}
+
 /* content container */
 .content-container:after {
   content: "";
