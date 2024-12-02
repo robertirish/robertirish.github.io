@@ -79,7 +79,9 @@ h3,
 }
 
 .align-center {
-	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
 }
 
 .heading-underline::after {
@@ -245,11 +247,7 @@ p a:focus {
 	padding: 0 !important;
 }
 
-.content-container.align-center * {
-	margin-left: auto !important;
-	margin-right: auto !important;
-	text-align: center !important;
-}
+.content-container {
 
 .content-container > *:not(h1, h2, div, figure, img) {
 	max-width: 800px;
