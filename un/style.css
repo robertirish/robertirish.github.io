@@ -394,12 +394,19 @@ p a:focus {
 /* col-layout */
 .col-layout.bg-gray .col-block {
 	background-color: #f5f5f5;
-	border-bottom: 4px solid #ddd;
 }
 
 .col-layout.bg-gray .col-block:hover,
 .col-layout.bg-gray .col-block:focus {
 	background-color: #e4eef4;
+}
+
+.col-layout.border .col-block {
+	border-bottom: 4px solid #ddd;
+}
+
+.col-layout.border .col-block:hover,
+.col-layout.border .col-block:focus {
 	border-bottom-color: #009edb;
 }
 
@@ -414,6 +421,7 @@ p a:focus {
 
 .col-block {
 	display: block;
+	margin-bottom: 32px;
 	width: 100%;
 }
 
@@ -1441,6 +1449,105 @@ p a:focus {
 }
 /* animated masonry banner */
 .masonry-banner {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.masonry-banner .masonry-banner-inner {
+	display: flex;
+	flex-flow: column wrap;
+	height: 100vh;
+	gap: 16px;
+}
+
+.masonry-banner .masonry-banner-inner figure {
+	position: relative;
+	width: 240px;
+}
+
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 1),
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 6),
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 8) {
+	height: calc(30vh - 50px);
+}
+
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 2),
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 4),
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 9) {
+	height: calc(20vh - 50px);
+}
+
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 3),
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 5),
+.masonry-banner .masonry-banner-inner figure:nth-child(9n + 7) {
+	height: calc(50vh - 50px);
+}
+
+.masonry-banner .masonry-banner-inner figure img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	object-position: center center;
+}
+
+.masonry-banner[data-animated="true"] {
+	overflow: hidden;
+}
+
+.masonry-banner[data-animated="true"] .masonry-banner-inner {
+	width: max-content !important;
+	animation: 
+		scroll 
+		var(--_animation-duration, 40s)
+		var(--_animation-direction, forwards)
+		linear
+		infinite;
+}
+
+@keyframes scroll {
+	to {
+		transform: translate(calc(-50% - 8px));
+	}
+}
+</style>
+<!-- page content -->
+<div class="parallax" id="parallax-001">
+	<div class="parallax-inner size-120"><img alt="An illustration of a boy with a paper dove, a woman voting, a knotted gun sculpture, a peacekeeper, two flying doves, and a woman holding an object, set against a blue and yellow background." src="https://www.un.org/sites/un2.un.org/files/homepagem2.jpg"></div>
+	<script type="text/javascript">
+	  const background = document.querySelector('#parallax-001 .parallax-inner');
+	  var offset1 = document.querySelector('#parallax-001').offsetTop - document.querySelector('#parallax-001').clientHeight;
+
+	  if (offset1 < 0) {
+	    offset1 = 0;
+	  }
+
+	  const parallax1 = () => {
+	    const { scrollY } = window;
+	    if (offset1 < scrollY) {
+	      background.style.marginTop = ((scrollY-offset1) * -.1) + 'px';
+	    }
+	  }
+
+	  window.addEventListener('scroll', parallax1);
+	</script></div>
+
+<div class="content-container align-center">
+	<h2 class="style-h1">Voices for peace</h2>
+
+	<p class="align-center lede">“In a gentle way, you can shake the world”<br>
+		— Mahatma&nbsp;Gandhi on non-violence</p>
+
+	<p>Mahatma Gandhi's enduring wisdom rings truer than ever in these turbulent times. Though conflict, violence, and division cast a long shadow, a powerful counter-movement is&nbsp;rising.</p>
+
+	<p>Across the world, people are refusing to be defined by hate, choosing instead to become architects of peace. They are shaking the foundations of our world, demanding a future that is brighter, fairer and more meaningful for everyone—regardless of race, identity or&nbsp;origin.</p>
+
+	<p>These are the stories of those who dare to shake and shape the world. Students, survivors, community leaders, activists, even neighbours—ordinary people with extraordinary courage. They are the changemakers, the peacebuilders, the ones who refuse to let violence have the final word. Their stories will inspire you, challenge you, and remind you that even the gentlest touch can send ripples of change across the&nbsp;world.</p>
+</div>
+<style type="text/css">.masonry-banner {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
