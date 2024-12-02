@@ -391,10 +391,20 @@ p a:focus {
   }
 }
 
-/* two-col */
+/* col-layout */
+.col-layout.bg-gray .col-block {
+	background-color: #f5f5f5;
+	border-bottom: 4px solid #ddd;
+}
+
+.col-layout.bg-gray .col-block:hover,
+.col-layout.bg-gray .col-block:focus {
+	background-color: #e4eef4;
+	border-bottom-color: #009edb;
+}
+
 .two-col,
-.three-col,
-.four-col {
+.three-col {
 	display: flex;
 	flex-flow: column nowrap;
 	width: 100%;
@@ -437,15 +447,13 @@ p a:focus {
 }
 
 @media screen and (min-width: 769px) {
-	.two-col,
-	.three-col,
-	.four-col {
+	.two-col {
 		flex-flow: row nowrap;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-	.col-block {
+	.two-col .col-block {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -456,19 +464,37 @@ p a:focus {
 		margin-right: 16px;
 	}
 
+	.two-col .col-block + .col-block {
+		margin-top: 0;
+	}
+
+	.two-col .col-block p {
+		font-size: 16px !important;
+		font-size: 1.6rem !important;
+	}
+}
+
+@media screen and (min-width: 981px) {
+	.three-col {
+		flex-flow: row nowrap;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.three-col .col-block {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+
 	.three-col .col-block {
 		width: calc(33.3333333% - 32px);
 	}
 
-	.four-col .col-block {
-		width: calc(25% - 32px);
-	}
-
-	.col-block + .col-block {
+	.three-col .col-block + .col-block {
 		margin-top: 0;
 	}
 
-	.col-block p {
+	.three-col .col-block p {
 		font-size: 16px !important;
 		font-size: 1.6rem !important;
 	}
