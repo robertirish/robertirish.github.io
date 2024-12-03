@@ -1181,21 +1181,12 @@
 .banner-fact-cards {
   display: flex !important;
   flex-flow: column nowrap !important;
-  align-items: flex-start;
-  margin-top: 40px !important;
+  align-items: flex-start !important;
   width: 100% !important;
 }
 
-.banner-fact-cards:first-child {
-	margin-top: 0 !important;
-}
-
-.banner-fact-cards:first-child .fact-card:nth-child(1) {
-	margin-top: 0 !important;
-}
-
 .banner-fact-cards .fact-card {
-  margin-top: 40px !important;
+  margin-bottom: 32px !important;
 }
 
 @media screen and (min-width: 980px) {
@@ -1210,9 +1201,9 @@
 	}
 
   .banner-fact-cards .fact-card {
-    width: 31.3333333% !important;
-    margin-left: 1% !important;
-    margin-right: 1% !important;
+    width: calc(33.3333333% - 32px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
   }
 }
 
