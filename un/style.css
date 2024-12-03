@@ -1235,7 +1235,7 @@
 	width: 240px;
 }
 
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 1),
+/*.masonry-banner .masonry-banner-inner figure:nth-child(9n + 1),
 .masonry-banner .masonry-banner-inner figure:nth-child(9n + 6),
 .masonry-banner .masonry-banner-inner figure:nth-child(9n + 8) {
 	height: calc(30vh - 50px);
@@ -1250,6 +1250,18 @@
 .masonry-banner .masonry-banner-inner figure:nth-child(9n + 3),
 .masonry-banner .masonry-banner-inner figure:nth-child(9n + 5),
 .masonry-banner .masonry-banner-inner figure:nth-child(9n + 7) {
+	height: calc(50vh - 50px);
+}*/
+
+.masonry-banner .masonry-banner-inner figure.masonry-square {
+	height: calc(30vh - 50px);
+}
+
+.masonry-banner .masonry-banner-inner figure.masonry-landscape {
+	height: calc(20vh - 50px);
+}
+
+.masonry-banner .masonry-banner-inner figure.masonry-portrait {
 	height: calc(50vh - 50px);
 }
 
