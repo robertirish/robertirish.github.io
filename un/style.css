@@ -164,7 +164,7 @@
 	border-bottom: solid 0.1rem #009edb;
 }
 
-.content-container.blue-background p a {
+.content-container.background-color p a {
 	border-bottom: dotted 0.1rem #fff;
 }
 
@@ -216,7 +216,7 @@
 	margin-top: 40px;
 }
 
-.content-container.max-width {
+.content-container .max-width {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1350px;
@@ -238,13 +238,13 @@
 	padding-right: 20px;
 }
 
-.content-container.background-blue {
+.content-container.background-color {
 	background-color: #2b21ce;
 	margin-top: 80px;
 	padding-bottom: 100px;
 }
-.content-container.background-blue * {
-	color: #fff;
+.content-container.background-color * {
+	color: #fff !important;
 }
 
 .content-container.no-padding {
@@ -520,13 +520,6 @@
 	.content-container .two-col,
 	.content-container .three-col {
 		flex-flow: row wrap;
-	}
-
-	.content-container .two-col.narrow,
-	.content-container .three-col.narrow {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1350px;
 	}
 
 	.content-container .col-block:last-child,
@@ -829,124 +822,141 @@
 
 /* featured-quote */
 .content-container .featured-quote {
-	background-color: #009edb !important;
-	padding-top: 80px !important;
-	padding-bottom: 0 !important;
+	background-color: #009edb;
+	padding-top: 80px;
+	padding-bottom: 100px;
 }
 
-.content-container .featured-quote blockquote {
-	position: relative !important;
-	margin: 0 !important;
-  border: 0 !important;
-  padding: 0 !important;
+.content-container .featured-quote:has(> .quote-image) {
+	padding-bottom: 0;
 }
 
-/* remove blockquote styles */
-.content-container .featured-quote blockquote p::before {
-	display: none !important;
-	content: "" !important;
+.content-container .featured-quote {
+	position: relative;
+	margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.content-container .featured-quote p::before {
+	display: none;
+	content: "";
 }
 
 .content-container .featured-quote .quote-image {
-	margin-top: 16px !important;
-	display: block !important;
-	text-align: right !important;
-	width: 100% !important;
+	margin-top: 16px;
+	display: block;
+	text-align: right;
+	width: 100%;
 }
 
 .content-container .featured-quote .quote-image img {
-	width: 60% !important;
+	width: 60%;
 }
 
-.content-container .featured-quote blockquote .quote-text,
-.content-container .featured-quote blockquote .quote-source {
-	line-height: 1.2 !important;
+.content-container .featured-quote .quote-text,
+.content-container .featured-quote .quote-source {
+	line-height: 1.2;
 }
 
-.content-container .featured-quote blockquote .quote-source {
-	margin: 24px 0 0 !important;
+.content-container .featured-quote .quote-source {
+	margin: 24px 0 0;
 }
 
-.content-container .featured-quote blockquote .quote-source a,
-.content-container .featured-quote blockquote .quote-source a cite {
-	transition: all 0.2s ease !important;
+.content-container .featured-quote .quote-source a,
+.content-container .featured-quote .quote-source a cite {
+	transition: all 0.2s ease;
 }
 
-.content-container .featured-quote blockquote .quote-source a:hover, 
-.content-container .featured-quote blockquote .quote-source a:focus,
-.content-container .featured-quote blockquote .quote-source a:hover cite, 
-.content-container .featured-quote blockquote .quote-source a:focus cite {
-	transition: all 0.2s ease !important;
-	color: #fff !important;
-	border-bottom: 1px solid #fff !important;
+.content-container .featured-quote .quote-source a:hover, 
+.content-container .featured-quote .quote-source a:focus,
+.content-container .featured-quote .quote-source a:hover cite, 
+.content-container .featured-quote .quote-source a:focus cite {
+	transition: all 0.2s ease;
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
-.content-container .featured-quote blockquote .quote-text,
-.content-container .featured-quote blockquote .quote-text .word-highlighted {
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-	font-weight: 700 !important;
-	font-size: 24px !important;
-	font-size: 2.4rem !important;
-  color: #fff !important;
+.content-container .featured-quote .quote-text,
+.content-container .featured-quote .quote-text .word-highlighted {
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	font-size: 2.4rem;
+  color: #fff;
 }
 
-.content-container .featured-quote blockquote .quote-source {
-  color: #000 !important;
+.content-container .featured-quote .quote-source {
+  color: #000;
 }
 
-.content-container .featured-quote blockquote .quote-text .word-highlighted {
-  background-color: #000 !important;
-  color: #fff !important;
-  border-radius: 24px !important;
-  padding: 0 8px !important;
+.content-container .featured-quote .quote-text .word-highlighted {
+  background-color: #000;
+  color: #fff;
+  border-radius: 24px;
+  padding: 0 8px;
 }
 
 @media screen and (min-width: 769px) {
-	.content-container .featured-quote {
-		padding-bottom: 100px !important;
+	.content-container .featured-quote:has(> .quote-image) {
+		padding-bottom: 100px;
 	}
 
 	.content-container .featured-quote .quote-image {
-		position: absolute !important;
-		right: 5% !important;
-	  bottom: 0 !important;
-	  width: 100% !important;
-	  max-width: 35% !important;
+		position: absolute;
+		right: 5%;
+	  bottom: 0;
+	  width: 100%;
+	  max-width: 35%;
 	}
 
 	.content-container .featured-quote .quote-image img {
-		width: 100% !important;
-		max-width: 600px !important;
+		width: 100%;
+		max-width: 600px;
 	}
 
-	.content-container .featured-quote blockquote::before {
-		display: block !important;
-		position: absolute !important;
-		top: -30px !important;
-		content: "\f10d" !important;
-		font-family: 'Fontawesome' !important;
+	.content-container .featured-quote:has(> .quote-image) blockquote::before {
+		display: block;
+		position: absolute;
+		top: -30px;
+		content: "\f10d";
+		font-family: 'Fontawesome';
 		font-size: 56px !important;
-		font-size: 5.6rem !important;
-		color: #fff !important;
+		font-size: 5.6rem;
+		color: #fff;
 	}
 
-	.content-container .featured-quote blockquote .quote-text,
-	.content-container .featured-quote blockquote .quote-text .word-highlighted {
-		font-size: 32px !important;
-		font-size: 3.2rem !important;
+	.content-container .featured-quote .quote-text,
+	.content-container .featured-quote .quote-text .word-highlighted {
+		font-size: 32px;
+		font-size: 3.2rem;
 	}
 
-	.content-container .featured-quote blockquote .quote-text,
-	.content-container .featured-quote blockquote .quote-source {
-		margin-left: 60px !important;
+	.content-container .featured-quote .quote-text,
+	.content-container .featured-quote .quote-source {
+		text-align: center;
+		max-width: 800px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.content-container .featured-quote blockquote .quote-text {
-		width: 55% !important;
+	.content-container .featured-quote:has(> .quote-image) .quote-text,
+	.content-container .featured-quote:has(> .quote-image) .quote-source {
+		margin-left: 60px;
+		margin-right: 0;
+		max-width: 100%;
+		text-align: left;
 	}
 
-	.content-container .featured-quote blockquote .quote-source {
-		width: 45% !important;
+	.content-container .featured-quote:has(> .quote-image) .quote-text {
+		max-width: 100%;
+		width: 55%;
+	}
+
+	.content-container .featured-quote:has(> .quote-image) .quote-source {
+		max-width: 100%;
+		width: 45%;
 	}
 }
 
