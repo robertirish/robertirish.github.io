@@ -217,7 +217,7 @@
 }
 
 .content-container.no-margin-top {
-	margin-top: 0;
+	margin-top: 0 !important;
 }
 
 .content-container .max-width {
@@ -827,6 +827,7 @@
 /* featured-quote */
 .content-container .featured-quote blockquote {
 	margin: 0 !important;
+	border-left: 0 !important;
 	padding: 0 !important;
 }
 
