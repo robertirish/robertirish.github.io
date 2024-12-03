@@ -273,14 +273,18 @@
 	line-height: 1.618;
 }
 
+/* fix links inside headings, paragraphs, etc */
 .content-container h1 *, 
 .content-container h2 *, 
 .content-container h3 *, 
 .content-container h4 *, 
 .content-container h5 *, 
 .content-container h6 *, 
-.content-container p * {
-	font-size: inherit;
+.content-container p *,
+.content-container figcaption *,
+.content-container cite * {
+	font-size: inherit !important;
+	line-height: inherit !important;
 }
 
 .content-container .lede {
