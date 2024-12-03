@@ -272,13 +272,12 @@ h4 a:focus {
 
 .content-container p,
 .content-container p > *,
-.content-container *:not(h1, h2, h3, h4, h5, h6) {
-	font-size: 16px;
-	font-size: 1.6rem;
-	font-size: 1.6rem;
-	line-height: 1.618;
+.content-container *:not(h1, h2, h3, h4, h5, h6, a) {
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.618;
 }
 
 .content-container .lede {
