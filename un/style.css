@@ -1232,43 +1232,25 @@
 	display: flex;
 	flex-flow: column wrap;
 	align-items: flex-start;
-	height: calc(100vh - 32px);
+	height: calc(100vh + 32px);
 	gap: 16px;
 }
 
 .masonry-banner .masonry-banner-inner figure {
 	position: relative;
-	width: 240px;
+	width: 280px;
 }
-
-/*.masonry-banner .masonry-banner-inner figure:nth-child(9n + 1),
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 6),
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 8) {
-	height: calc(30vh - 50px);
-}
-
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 2),
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 4),
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 9) {
-	height: calc(20vh - 50px);
-}
-
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 3),
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 5),
-.masonry-banner .masonry-banner-inner figure:nth-child(9n + 7) {
-	height: calc(50vh - 50px);
-}*/
 
 .masonry-banner .masonry-banner-inner figure.masonry-square {
-	height: calc(30vh);
+	height: 30vh;
 }
 
 .masonry-banner .masonry-banner-inner figure.masonry-landscape {
-	height: calc(20vh);
+	height: 20vh;
 }
 
 .masonry-banner .masonry-banner-inner figure.masonry-portrait {
-	height: calc(50vh);
+	height: 50vh;
 }
 
 .masonry-banner .masonry-banner-inner figure img {
