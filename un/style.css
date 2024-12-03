@@ -1232,7 +1232,7 @@
 	display: flex;
 	flex-flow: column wrap;
 	align-items: flex-start;
-	height: 100vh;
+	height: calc(100vh - 32px);
 	gap: 16px;
 }
 
@@ -1260,15 +1260,15 @@
 }*/
 
 .masonry-banner .masonry-banner-inner figure.masonry-square {
-	height: calc(30vh - 50px);
+	height: calc(30vh);
 }
 
 .masonry-banner .masonry-banner-inner figure.masonry-landscape {
-	height: calc(20vh - 50px);
+	height: calc(20vh);
 }
 
 .masonry-banner .masonry-banner-inner figure.masonry-portrait {
-	height: calc(50vh - 50px);
+	height: calc(50vh);
 }
 
 .masonry-banner .masonry-banner-inner figure img {
