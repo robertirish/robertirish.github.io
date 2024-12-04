@@ -320,7 +320,7 @@
 	font-size: 2rem !important;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 981px) {
 	.content-container ~ .content-container {
 		padding-top: 160px;
 	}
@@ -330,10 +330,17 @@
 		font-size: 2rem;
   }
 
-  .content-container .lede {
+  .content-container > .lede {
 		font-size: 24px !important;
 		font-size: 2.4rem !important;
   }
+}
+
+@media screen and (min-width: 1281px) {
+	  .content-container .lede {
+			font-size: 24px !important;
+			font-size: 2.4rem !important;
+	  }
 }
 
 /* sidebar widget */
