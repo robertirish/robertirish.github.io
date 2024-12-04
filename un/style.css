@@ -89,14 +89,14 @@
 
 .content-container h3,
 .content-container *.style-h3 {
-	font-size: 20px;
-	font-size: 2rem;
+	font-size: 24px;
+	font-size: 2.4rem;
   line-height: 1.2;
 }
 
 .content-container h4 {
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 20px;
+	font-size: 2rem;
   line-height: 1.2;
 }
 
@@ -173,6 +173,31 @@
 @media screen and (min-width: 769px) {
 	.content-container h1,
 	.content-container *.style-h1 {
+		font-size: 42px;
+		font-size: 4.2rem;
+	}
+
+	.content-container h2, 
+	.content-container *.style-h2 {
+		font-size: 36px;
+		font-size: 3.6rem;
+	}
+
+	.content-container h3,
+	.content-container *.style-h3 {
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
+
+	.content-container h4 {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 981px) {
+	.content-container h1,
+	.content-container *.style-h1 {
 		font-size: 56px;
 		font-size: 5.6rem;
 	}
@@ -182,15 +207,17 @@
 		font-size: 42px;
 		font-size: 4.2rem;
 	}
+}
 
+@media screen and (min-width: 1281px) {
 	.content-container h3,
 	.content-container *.style-h3 {
-		font-size: 28px;
+		font-size: 32px;
 		font-size: 3.2rem;
 	}
 
 	.content-container h4 {
-		font-size: 20px;
+		font-size: 24px;
 		font-size: 2.4rem;
 	}
 }
@@ -742,26 +769,26 @@
 }
 
 .content-container .video-banner-video {
-	width: 100% !important;
+	width: 100%;
 }
 
 .content-container .video-banner-video-inner {
-	width: 100% !important;
-	height: 0 !important;
-	padding-bottom: 56.25% !important;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
 	position: relative;
 }
 
 .content-container .video-banner-video-inner iframe {
 	position: absolute;
-	width: 100% !important;
+	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 }
 
 .content-container .video-banner-content {
-	padding: 32px 16px 0 !important;
+	padding: 32px 16px 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -775,7 +802,7 @@
 
 	.content-container .video-banner-content {
 		width: 50% !important;
-		padding: 32px !important;
+		padding: 0 32px 32px;
 	}
 
 	.content-container .video-banner-content p {
@@ -786,7 +813,7 @@
 
 @media screen and (min-width: 981px) {
 	.content-container .video-banner-video {
-		width: 70% !important;
+		width: 70%;
 	}
 }
 
@@ -803,7 +830,7 @@
 }
 
 #parallax-001.parallax {
-	margin-top: 0 !important;
+	margin-top: 0;
 }
 
 .parallax {
@@ -841,10 +868,6 @@
 	.parallax {
     height: 0;
     padding-bottom: 40%;
-  }
-  
-  .parallax + * {
-  	padding-top: 40px !important;
   }
 
   .parallax-inner {
