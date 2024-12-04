@@ -464,10 +464,14 @@
 .content-container .three-col {
 	display: flex;
 	flex-flow: column wrap;
-	align-items: flex-start;
 	width: 100%;
 	max-width: 100%;
 	justify-content: space-between;
+}
+
+.content-container .two-col:has(.sub-block),
+.content-container .three-col:has(.sub-block) {
+	align-items: flex-start;
 }
 
 .content-container .col-block a {
@@ -478,12 +482,16 @@
 .content-container .sub-block {
 	display: block;
 	width: 100%;
+	margin-right: 0;
 	margin-bottom: 32px;
+	margin-left: 0;
 }
 
 .content-container .col-block:last-child,
 .content-container .sub-block:last-child {
+	margin-right: auto;
 	margin-bottom: 0;
+
 }
 
 .content-container .block-image {
@@ -829,6 +837,7 @@
 	margin: 0 !important;
 	border-left: 0 !important;
 	padding: 0 !important;
+	position: relative !important;
 }
 
 .content-container .featured-quote {
