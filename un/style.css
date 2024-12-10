@@ -342,12 +342,19 @@
 	text-align: center;
 }
 
-.content-container *:not(h1, h2, h3, h4, h5, h6) {
+body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.618;
+}
+
+@media screen and (min-width: 769px) {
+	body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
+		font-size: 20px;
+		font-size: 2rem;
+	}
 }
 
 /* fix links inside headings, paragraphs, etc */
