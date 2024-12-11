@@ -12,7 +12,15 @@
 	margin-bottom: 0 !important;
 }
 
-body[class*="node-type-"] .content-container p{
+body[class*="node-type-"] .content-container h1,
+body[class*="node-type-"] .content-container h2,
+body[class*="node-type-"] .content-container h3,
+body[class*="node-type-"] .content-container h4,
+body[class*="node-type-"] .content-container h5,
+body[class*="node-type-"] .content-container h6,
+body[class*="node-type-"] .content-container p,
+body[class*="node-type-"] .content-container blockquote,
+body[class*="node-type-"] .content-container figure {
 	width: 100%;
 }
 
