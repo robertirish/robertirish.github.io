@@ -202,17 +202,17 @@ body[class*="node-type-"] .content-container p{
 		font-size: 2rem;
 	}
 
-	.content-container p + h2,
-	.content-container p + .style-h2 {
+	.content-container > * + h2,
+	.content-container > * + .style-h2 {
 		margin-top: 60px;
 	}
 
-	.content-container p + h3,
-	.content-container p + .style-h3 {
+	.content-container > * + h3,
+	.content-container > * + .style-h3 {
 		margin-top: 40px;
 	}
 
-	.content-container p + h4 {
+	.content-container > * + h4 {
 		margin-top: 24px;
 	}
 }
