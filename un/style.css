@@ -12,6 +12,10 @@
 	margin-bottom: 0 !important;
 }
 
+body[class*="node-type-"] .content-container p {
+	width: 100%;
+}
+
 .property_home_page_section:nth-of-type(3),
 .property_home_page_section:nth-of-type(4),
 .property_home_page_section:nth-of-type(5) {
