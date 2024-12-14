@@ -1325,7 +1325,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 /* fact card alternate color scheme */
 /* applied to cards with class 'alternate' and to every second card */
 .fact-card.alternate .fact-card-wrapper,
-.banner-fact-cards .fact-card:nth-child(2n + 2) .fact-card-wrapper .fact-card-inner {
+.banner-fact-cards .fact-card:nth-child(2n + 2) .fact-card-wrapper {
   background-color: #2c21d7 !important;
 }
 
@@ -1352,13 +1352,8 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 .fact-card.alternate .fact-card-wrapper .fact-card-inner .fact-card-un-logo .st0,
-.banner-fact-cards .fact-card:nth-child(2n + 2) .fact-card-wrapper .fact-card-inner .fact-card-un-logo .st0 {
-  fill: #ffffff !important;
-}
-
-.fact-card.alternate .fact-card-wrapper .fact-card-inner .fact-card-un-logo .st1,
-.fact-card.alternate .fact-card-wrapper .fact-card-inner .fact-card-un-logo .st1 {
-  stroke: #ffffff !important;
+.banner-fact-cards .fact-card:nth-child(2n + 2) .fact-card-wrapper .fact-card-inner .fact-card-un-logo {
+	filter: brightness(1000%) !important;
 }
 
 /* fact card row */
