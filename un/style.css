@@ -1295,10 +1295,10 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
     padding-bottom: 100% !important;
   }
 
-  .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
+  /*.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
   .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message > em {
     font-size: 36px !important;
-  }
+  }*/
 }
 
 @media screen and (min-width: 980px) {
@@ -1315,12 +1315,12 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
   }
 }
 
-@media screen and (min-width: 1440px) {
+/*@media screen and (min-width: 1440px) {
   .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
   .fact-card .fact-card-wrapper .fact-card-inner .fact-card-message > em {
     font-size: 36px !important;
   }
-}
+}*/
 
 /* fact card alternate color scheme */
 /* applied to cards with class 'alternate' and to every second card */
