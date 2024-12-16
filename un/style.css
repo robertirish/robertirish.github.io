@@ -393,7 +393,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	margin-left: 16px;
 	margin-right: 16px;
 	border: 2px solid #009edb;
-	padding: 14px;
+	padding: 14px !important;
 	width: 100%;
 	max-width: 600px;
 	font-size: 16px;
