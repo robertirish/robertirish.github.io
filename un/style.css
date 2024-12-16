@@ -1348,7 +1348,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .fact-card.alternate .fact-card-wrapper .fact-card-inner .fact-card-un-logo .st0,
 .banner-fact-cards .fact-card:nth-child(2n + 2) .fact-card-wrapper .fact-card-inner .fact-card-un-logo {
-	filter: brightness(1000%) !important;
+	filter: brightness(0) saturate(100%) invert(99%) sepia(39%) saturate(2%) hue-rotate(149deg) brightness(107%) contrast(101%) !important;
 }
 
 /* fact card row */
