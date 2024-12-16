@@ -388,6 +388,27 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 2rem !important;
 }
 
+.content-container a.button {
+	display: block;
+	margin-left: 16px;
+	margin-right: 16px;
+	border: 2px solid #009edb;
+	padding: 14px;
+	width: 100%;
+	max-width: 600px;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.content-container a.button:hover,
+.content-container a.button:focus {
+	background-color: #c0e7f7;
+}
+
 @media screen and (min-width: 981px) {
 	.content-container ~ .content-container {
 		padding-top: 100px;
