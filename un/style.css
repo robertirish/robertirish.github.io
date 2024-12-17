@@ -264,19 +264,6 @@ body[class*="node-type-"] .content-container figure {
 		font-size: 24px;
 		font-size: 2.4rem;
 	}
-
-	.content-container .col-layout .block-text h3,
-	.content-container .col-layout .block-text *.style-h3 {
-		font-size: 28px;
-		font-size: 2.8rem;
-	}
-
-	.content-container .col-layout .block-text h4,
-	.content-container .col-layout .block-text p,
-	.content-container .col-layout .block-text .lede {
-		font-size: 20px;
-		font-size: 2rem;
-	}
 }
 
 .content-container {
@@ -625,7 +612,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 /* two-col, three-col */
-
 .content-container .two-col,
 .content-container .three-col {
 	display: flex;
@@ -702,6 +688,30 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	margin-bottom: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
+}
+
+.content-container .col-layout .col-block .block-text h3,
+.content-container .col-layout .col-block .block-text *.style-h3,
+.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
+	font-size: 28px;
+	font-size: 2.8rem;
+}
+
+.content-container .col-layout .col-block .block-text h4 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+.content-container .col-layout .col-block .block-text h3 + p,
+.content-container .col-layout .col-block .block-text *.style-h3 + p,
+.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.content-container .col-layout .col-block .block-text h4 + p {
+	font-size: 20px;
+	font-size: 2rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -783,6 +793,32 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	.content-container .col-layout.sub-horizontal .sub-block .block-image.ratio-2-3 {
 		padding-bottom: 66.6666666%;
 	}
+
+	.content-container .col-layout .col-block .block-text h3,
+	.content-container .col-layout .col-block .block-text *.style-h3,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
+		font-size: 24px;
+		font-size: 2.4rem;
+	  line-height: 1.2;
+	}
+
+	.content-container .col-layout .col-block .block-text h4 {
+		font-size: 20px;
+		font-size: 2rem;
+	  line-height: 1.2;
+	}
+
+	.content-container .col-layout .col-block .block-text h3 + p,
+	.content-container .col-layout .col-block .block-text *.style-h3 + p,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+
+	.content-container .col-layout .col-block .block-text h4 + p {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
 }
 
 @media screen and (min-width: 981px) {
@@ -791,36 +827,59 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 1.6rem;
 	}
 
+	.content-container .col-layout .col-block .block-text h3,
+	.content-container .col-layout .col-block .block-text *.style-h3,
 	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
 		font-size: 28px;
-    font-size: 2.8rem;
+		font-size: 2.8rem;
 	}
 
-	.content-container .col-layout.feature-story .col-block:first-child .block-text p {
-    font-size: 20px !important;
-    font-size: 2rem !important;
+	.content-container .col-layout .col-block .block-text h4 {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+	.content-container .col-layout .col-block .block-text h3 + p,
+	.content-container .col-layout .col-block .block-text *.style-h3 + p,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+	.content-container .col-layout .col-block .block-text h4 + p {
+		font-size: 20px;
+		font-size: 2rem;
 	}
 }
 
 @media screen and (min-width: 1281px) {
-	.content-container .block-text p {
-		font-size: 20px;
-		font-size: 2rem;
-	}
-
 	.content-container .col-block .event-date {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
 
+	.content-container .col-layout .col-block .block-text h3,
+	.content-container .col-layout .col-block .block-text *.style-h3,
 	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
-		font-size: 32px;
-    font-size: 3.2rem;
+		font-size: 28px;
+		font-size: 2.8rem;
 	}
 
-	.content-container .col-layout.feature-story .col-block:first-child .block-text p {
-    font-size: 24px;
-    font-size: 2.4rem;
+	.content-container .col-layout .col-block .block-text h4 {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+	.content-container .col-layout .col-block .block-text h3 + p,
+	.content-container .col-layout .col-block .block-text *.style-h3 + p,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+	.content-container .col-layout .col-block .block-text h4 + p {
+		font-size: 20px;
+		font-size: 2rem;
 	}
 }
 
