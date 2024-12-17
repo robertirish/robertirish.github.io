@@ -873,8 +873,8 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	.content-container .col-layout .col-block .block-text h3 + p,
 	.content-container .col-layout .col-block .block-text *.style-h3 + p,
 	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
-		font-size: 24px;
-		font-size: 2.4rem;
+		font-size: 20px;
+		font-size: 2rem;
 	}
 
 	.content-container .col-layout .col-block .block-text h4 + p {
