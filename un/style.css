@@ -264,6 +264,17 @@ body[class*="node-type-"] .content-container figure {
 		font-size: 24px;
 		font-size: 2.4rem;
 	}
+
+	.content-container .col-layout h3,
+	.content-container .col-layout *.style-h3 {
+		font-size: 28px;
+		font-size: 2.8rem;
+	}
+
+	.content-container .col-layout h4 {
+		font-size: 20px;
+		font-size: 2rem;
+	}
 }
 
 .content-container {
@@ -773,8 +784,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 981px) {
-	.content-container .block-text p,
-	.content-container .col-block .event-date {
+	.content-container .block-text p {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
@@ -791,10 +801,14 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 1281px) {
-	.content-container .block-text p,
-	.content-container .col-block .event-date {
+	.content-container .block-text p {
 		font-size: 20px;
 		font-size: 2rem;
+	}
+
+	.content-container .col-block .event-date {
+		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
