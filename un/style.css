@@ -265,13 +265,15 @@ body[class*="node-type-"] .content-container figure {
 		font-size: 2.4rem;
 	}
 
-	.content-container .col-layout h3,
-	.content-container .col-layout *.style-h3 {
+	.content-container .col-layout .block-text h3,
+	.content-container .col-layout .block-text *.style-h3 {
 		font-size: 28px;
 		font-size: 2.8rem;
 	}
 
-	.content-container .col-layout h4 {
+	.content-container .col-layout .block-text h4,
+	.content-container .col-layout .block-text p,
+	.content-container .col-layout .block-text .lede {
 		font-size: 20px;
 		font-size: 2rem;
 	}
