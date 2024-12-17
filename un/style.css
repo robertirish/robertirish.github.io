@@ -697,17 +697,17 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		flex-flow: row wrap;
 	}
 
-	.col-layout.feature-story .col-block:first-child {
+	.content-container .col-layout.feature-story .col-block:first-child {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
 	}
 
-	.col-layout.feature-story .col-block:first-child .block-image {
+	.content-container .col-layout.feature-story .col-block:first-child .block-image {
 		padding-bottom: 33.3333333%;
 	}
 
-	.col-layout.feature-story .col-block:first-child::after {
+	.content-container .col-layout.feature-story .col-block:first-child::after {
 		display: none;
 	}
 
@@ -779,12 +779,12 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 1.6rem;
 	}
 
-	.col-layout.feature-story .col-block:first-child .block-text h4 {
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
 		font-size: 28px;
     font-size: 3.2rem;
 	}
 
-	.col-layout.feature-story .col-block:first-child .block-text p {
+	.content-container .col-layout.feature-story .col-block:first-child .block-text p {
     font-size: 20px !important;
     font-size: 2.4rem !important;
 	}
@@ -797,14 +797,14 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2rem;
 	}
 
-	.col-layout.feature-story .col-block:first-child .block-text h4 {
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
 		font-size: 32px;
     font-size: 3.2rem;
 	}
 
-	.col-layout.feature-story .col-block:first-child .block-text p {
-    font-size: 24px !important;
-    font-size: 2.4rem !important;
+	.content-container .col-layout.feature-story .col-block:first-child .block-text p {
+    font-size: 24px;
+    font-size: 2.4rem;
 	}
 }
 
