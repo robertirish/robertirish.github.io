@@ -122,6 +122,20 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 16px;
 }
 
+.content-container > * + h2,
+.content-container > * + .style-h2 {
+	margin-top: 40px;
+}
+
+.content-container > * + h3,
+.content-container > * + .style-h3 {
+	margin-top: 24px;
+}
+
+.content-container > * + h4 {
+	margin-top: 16px;
+}
+
 .content-container .heading-underline::after {
 	content: "";
 	display: block;
@@ -341,6 +355,8 @@ body[class*="node-type-"] .content-container figure {
 }
 
 .content-container > *:not(div) {
+  margin-left: auto;
+  margin-right: auto;
 	max-width: 800px;
 	width: 100%;
 }
@@ -389,25 +405,40 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 .content-container a.button {
-	display: block;
+	display: inline-block;
 	margin-left: 16px;
 	margin-right: 16px;
-	border: 2px solid #009edb;
+	letter-spacing: 1px;
+	line-height: 1;
+	font-weight: 700;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 1px solid #ccc;
 	padding: 12px 16px;
 	width: 100%;
 	max-width: 600px;
-	font-size: 14px !important;
-	font-size: 1.4rem !important;
-	font-weight: bold;
+	font-size: 12px !important;
+	font-size: 1.2rem !important;
 	text-transform: uppercase;
-	border-radius: 6px;
+  border-radius: 4px;
 	text-align: center;
 	text-decoration: none !important;
+	color: #333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
 }
 
 .content-container a.button:hover,
 .content-container a.button:focus {
 	background-color: #c0e7f7;
+	border-color: #009edb;
 }
 
 @media screen and (min-width: 981px) {
@@ -435,8 +466,8 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 /* sidebar widget */
 .content-container .unodc-link {
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	margin-top: 32px;
 	display: flex;
 	flex-flow: row nowrap;
@@ -444,7 +475,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	justify-content: space-around;
 	padding: 16px;
 	background-color: #f5f5f5;
-	transition: background-color .2s ease;
+	transition: background-color .25s ease-in-out;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -452,7 +483,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 .content-container .unodc-link:hover, 
 .content-container .unodc-link:focus {
 	background-color: #e4eef4;
-	transition: background-color .2s ease;
 }
 
 .content-container .unodc-link .unodc-content p {
@@ -497,7 +527,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 @media screen and (min-width: 1351px) {
   .content-container .unodc-link {
 		margin-top: 0 !important;
-		border: 1px solid #ddd;
+		border: 1px solid #ccc;
 		position: absolute;
 		top: 0;
 		left: calc((100vw + 800px) / 2 + 16px);
@@ -546,7 +576,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .content-container .col-layout.border .col-block,
 .content-container .col-layout.border .sub-block {
-	border-bottom: 4px solid #ddd;
+	border-bottom: 4px solid #ccc;
 }
 
 .content-container .col-layout.border .col-block:hover,
@@ -563,7 +593,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 .content-container .col-layout.events .col-block {
-	border: 4px solid #ddd;
+	border: 1px solid #ccc;
 	border-radius: 16px;
 	overflow: hidden;
 }
@@ -571,8 +601,8 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 .content-container .col-block .event-date {
 	margin-top: 16px;
 	font-weight: 600;
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 14px;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 }
 
@@ -667,6 +697,20 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		flex-flow: row wrap;
 	}
 
+	.col-layout.feature-story .col-block:first-child {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+	}
+
+	.col-layout.feature-story .col-block:first-child .block-image {
+		padding-bottom: 33.3333333%;
+	}
+
+	.col-layout.feature-story .col-block:first-child::after {
+		display: none;
+	}
+
 	.content-container .col-block:last-child,
 	.content-container .sub-block:last-child {
 		margin-bottom: 32px;
@@ -734,6 +778,16 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
+
+	.col-layout.feature-story .col-block:first-child .block-text h4 {
+		font-size: 28px;
+    font-size: 3.2rem;
+	}
+
+	.col-layout.feature-story .col-block:first-child .block-text p {
+    font-size: 20px !important;
+    font-size: 2.4rem !important;
+	}
 }
 
 @media screen and (min-width: 1281px) {
@@ -741,6 +795,16 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	.content-container .col-block .event-date {
 		font-size: 20px;
 		font-size: 2rem;
+	}
+
+	.col-layout.feature-story .col-block:first-child .block-text h4 {
+		font-size: 32px;
+    font-size: 3.2rem;
+	}
+
+	.col-layout.feature-story .col-block:first-child .block-text p {
+    font-size: 24px !important;
+    font-size: 2.4rem !important;
 	}
 }
 
@@ -1055,14 +1119,14 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .content-container .featured-quote .quote-source a,
 .content-container .featured-quote .quote-source a cite {
-	transition: all 0.2s ease;
+	transition: all 0.25s ease-in-out;
 }
 
 .content-container .featured-quote .quote-source a:hover, 
 .content-container .featured-quote .quote-source a:focus,
 .content-container .featured-quote .quote-source a:hover cite, 
 .content-container .featured-quote .quote-source a:focus cite {
-	transition: all 0.2s ease;
+	transition: all 0.25s ease-in-out;
 	color: #fff;
 	border-bottom: 1px solid #fff;
 }
