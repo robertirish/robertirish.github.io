@@ -714,6 +714,15 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 1.6rem;
 }
 
+.content-container .col-layout.feature-story .col-block:first-child .block-text h4::before {
+  content: "Featured story";
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 6px;
+}
+
 @media screen and (min-width: 769px) {
 	.content-container .two-col,
 	.content-container .three-col {
@@ -726,8 +735,21 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
     flex-flow: row nowrap;
 	}
 
+	.content-container .col-layout.feature-story .col-block:first-child .block-image,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text {
+		width: 100%;
+	}
+
 	.content-container .col-layout.feature-story .col-block:first-child .block-image {
 		padding-bottom: 33.3333333%;
+	}
+
+	.content-container .col-layout.feature-story .col-block:first-child .block-text {
+		margin-top: 32px;
+	}
+
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4::before {
+		font-size: 16px;
 	}
 
 	.content-container .col-layout.feature-story .col-block:first-child::after {
