@@ -577,6 +577,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 .content-container .col-layout.border .col-block,
 .content-container .col-layout.border .sub-block {
 	border-bottom: 4px solid #ccc;
+	border-radius: 0 0 4px 4px;
 }
 
 .content-container .col-layout.border .col-block:hover,
@@ -714,6 +715,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 1.6rem;
 }
 
+.content-container .block-text h3 a,
+.content-container .block-text h4 a {
+	display: block;
+}
+
 .content-container .arrow-right {
 	position: relative;
 }
@@ -724,13 +730,13 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	background-image: url();
+	background-image: url(https://cdn.jsdelivr.net/gh/robertirish/robertirish.github.io@v1.8.03/un/arrow-right.svg);
 	background-position: center center;
 	background-size: contain;
 }
 
-.content-container a:has(.arrow-right):hover .arrow-right::after,
-.content-container a:has(.arrow-right):focus .arrow-right::after {
+.content-container .arrow-right:has(a):hover::after,
+.content-container .arrow-right:has(a):hover::after {
 	filter: brightness(0) saturate(100%) invert(44%) sepia(81%) saturate(2005%) hue-rotate(166deg) brightness(94%) contrast(102%);
 }
 
