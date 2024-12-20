@@ -728,8 +728,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	display: block;
 	content: "";
 	position: absolute;
-	width: 40px;
-	height: 40px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 36px;
+	height: 36px;
 	background-image: url(https://cdn.jsdelivr.net/gh/robertirish/robertirish.github.io@v1.8.03/un/arrow-right.svg);
 	background-position: center center;
 	background-size: contain;
