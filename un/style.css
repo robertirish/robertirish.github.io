@@ -595,8 +595,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .content-container .col-layout.events .col-block {
 	border: 1px solid #ccc;
-	border-radius: 16px;
+	border-radius: 8px;
 	overflow: hidden;
+	border-bottom-width: 4px;
 }
 
 .content-container .col-block .event-date {
@@ -736,6 +737,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	background-image: url(https://cdn.jsdelivr.net/gh/robertirish/robertirish.github.io@v1.8.03/un/arrow-right.svg);
 	background-position: center center;
 	background-size: contain;
+	pointer-events: none;
 }
 
 .content-container .arrow-right:has(a):hover::after,
@@ -932,6 +934,79 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	}
 }
 
+/* overlay layout */
+.content-container .overlay-layout {
+	width: 100%;
+	max-width: 100%;
+}
+
+.content-container .overlay-layout {
+	display: flex;
+	flex-flow: column-reverse nowrap;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.content-container .overlay-layout .overlay-layout-image {
+	position: relative;
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%);
+    min-height: 600px;
+}
+
+.content-container .overlay-layout .overlay-layout-image img {
+	object-fit: cover;
+	object-position: center center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.content-container .overlay-layout .overlay-layout-text {
+	padding: 16px;
+	position: relative;
+	z-index: 9999;
+}
+
+@media screen and (min-width: 769px) {
+	.content-container .overlay-layout {
+		min-height: 800px;
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.content-container .overlay-layout .overlay-layout-image {
+		width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    min-height: 0;
+	    top: 0;
+	    left: -25%;
+	    mask-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%);
+	}
+
+	.content-container .overlay-layout .overlay-layout-text {
+		width: 50%;
+		max-width: 800px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		padding: 32px 5% 32px 0;
+	}
+
+	.content-container .overlay-layout .overlay-layout-text p {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 981px) {
+	.content-container .overlay-layout .overlay-layout-text p {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+}
+
 /* image banner */
 .content-container .image-banner {
 	padding-top: 60px;
@@ -1054,7 +1129,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 .content-container:has(.video-banner.full-width:first-child) {
-	padding-top: 0;
+/*	padding-top: 0;*/
 }
 
 .content-container .video-banner.full-width {
