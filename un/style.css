@@ -600,7 +600,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	border-bottom-width: 4px;
 }
 
-.content-container .col-block .event-date {
+.content-container .col-block.events .block-text p {
+	font-size: 16px !important;
+}
+
+.content-container .col-block.events .block-text .event-date {
 	margin-top: 16px;
 	font-weight: 600;
 	font-size: 14px;
@@ -1310,6 +1314,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 .content-container .featured-quote .quote-text,
 .content-container .featured-quote .quote-source {
 	line-height: 1.2;
+}
+
+.content-container .featured-quote .quote-text a {
+	border-bottom: 0;
+	color: #fff;
 }
 
 .content-container .featured-quote .quote-source {
