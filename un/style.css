@@ -625,7 +625,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	display: none;
 }
 
-@media screen and (min-width: 961px) {
+.content-container .col-layout.horizontal .col-block .block-image {
+	padding-bottom: 66.6666666%;
+}
+
+@media screen and (min-width: 981px) {
 	.content-container .col-layout.horizontal .col-block {
 		display: flex;
 		flex-flow: row nowrap;
@@ -634,6 +638,10 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	.content-container .col-layout.horizontal .col-block .block-image,
 	.content-container .col-layout.horizontal .col-block .block-text {
 		width: 100%;
+	}
+
+	.content-container .col-layout.horizontal .col-block .block-image {
+		padding-bottom: 33.3333333%;
 	}
 }
 
@@ -696,10 +704,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .content-container .block-image.ratio-2-3 {
 	padding-bottom: 133.3333333%;
-}
-
-.content-container .block-image.ratio-3-2 {
-	padding-bottom: 33.3333333%;
 }
 
 .content-container .block-image img {
