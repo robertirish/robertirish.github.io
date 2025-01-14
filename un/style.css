@@ -200,6 +200,14 @@ body[class*="node-type-"] .content-container figure {
 	border-bottom: solid 0.1rem #009edb;
 }
 
+.content-container .small {
+	font-size: 14px !important;
+}
+
+.content-container .uppercase {
+	text-transform: uppercase !important;
+}
+
 @media screen and (min-width: 769px) {
 	.content-container h1,
 	.content-container *.style-h1 {
