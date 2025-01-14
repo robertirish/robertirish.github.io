@@ -737,6 +737,12 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	padding-right: 16px;
 }
 
+.content-container .col-layout.max-width .col-block .block-text p,
+.content-container .col-layout.max-width .col-block .sub-block .block-text p {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
 .content-container .col-layout .col-block .block-text h3,
 .content-container .col-layout .col-block .block-text *.style-h3,
 .content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
