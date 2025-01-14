@@ -210,7 +210,6 @@ body[class*="node-type-"] .content-container figure {
 }
 
 @media screen and (min-width: 769px) {
-
 	.content-container h1,
 	.content-container *.style-h1 {
 		font-size: 42px;
@@ -250,7 +249,6 @@ body[class*="node-type-"] .content-container figure {
 }
 
 @media screen and (min-width: 981px) {
-
 	.content-container h1,
 	.content-container *.style-h1 {
 		font-size: 56px;
@@ -265,7 +263,6 @@ body[class*="node-type-"] .content-container figure {
 }
 
 @media screen and (min-width: 1281px) {
-
 	.content-container h3,
 	.content-container *.style-h3 {
 		font-size: 32px;
@@ -327,6 +324,11 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 0 !important;
 }
 
+.content-container.margin-bottom,
+.content-container .margin-bottom {
+	margin-bottom: 100px !important;
+}
+
 .content-container.margin-top-small,
 .content-container .margin-top-small {
 	margin-top: 40px !important;
@@ -350,25 +352,25 @@ body[class*="node-type-"] .content-container figure {
 	clear: both;
 }
 
-.content-container~.content-container {
-	padding-top: 80px;
+.content-container ~ .content-container {
+	padding-top: 100px;
 }
 
-.content-container>* {
+.content-container > * {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
+.content-container.background-color-gray {
+	background-color: #f1f1f1;
+}
+
 .content-container.background-color-dark {
 	background-color: #2b21ce;
-	margin-top: 80px;
-	padding-bottom: 100px;
 }
 
 .content-container.background-color-pale {
 	background-color: #c1e7f7;
-	margin-top: 80px;
-	padding-bottom: 100px;
 }
 
 .content-container.background-color-dark * {
@@ -377,6 +379,14 @@ body[class*="node-type-"] .content-container figure {
 
 .content-container.no-padding {
 	padding: 0;
+}
+
+.content-container.border-top {
+	border-top: 1px solid #ddd;
+}
+
+.content-container.border-bottom {
+	border-bottom: 1px solid #ddd;
 }
 
 .content-container>*:not(div) {
@@ -1017,15 +1027,27 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .content-container .overlay-layout {
 	display: flex;
-	flex-flow: column-reverse nowrap;
+	flex-flow: column nowrap;
 	padding-left: 0;
 	padding-right: 0;
 }
 
 .content-container .overlay-layout .overlay-layout-image {
 	position: relative;
-	mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%);
-	min-height: 600px;
+    min-height: 600px;
+}
+
+.content-container .overlay-layout .overlay-layout-image::after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .content-container .overlay-layout .overlay-layout-image img {
@@ -1044,19 +1066,22 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 @media screen and (min-width: 769px) {
 	.content-container .overlay-layout {
-		min-height: 800px;
+		min-height: 100vh;
 		display: flex;
 		flex-flow: row nowrap;
 	}
 
 	.content-container .overlay-layout .overlay-layout-image {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		min-height: 0;
-		top: 0;
-		left: -25%;
-		mask-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%);
+			width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    min-height: 0;
+	    top: 0;
+	    left: 0;
+	}
+
+	.content-container .overlay-layout .overlay-layout-image::after {
+	    background: linear-gradient(to right, transparent 25%, rgba(0, 0, 0, .8) 75%);
 	}
 
 	.content-container .overlay-layout .overlay-layout-text {
@@ -1069,13 +1094,17 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		padding: 32px 5% 32px 0;
 	}
 
+	.content-container .overlay-layout .overlay-layout-text * {
+		color: #fff;
+	}
+
 	.content-container .overlay-layout .overlay-layout-text p {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
 }
 
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 1281px) {
 	.content-container .overlay-layout .overlay-layout-text p {
 		font-size: 20px;
 		font-size: 2rem;
@@ -1357,7 +1386,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	position: relative;
 	margin: 0;
 	border: 0;
-	padding-top: 80px;
+	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: #009edb;
 }
@@ -1451,6 +1480,10 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 769px) {
+	.content-container .featured-quote {
+		padding-left: 5%;
+	}
+
 	.content-container .featured-quote blockquote {
 		position: absolute !important;
 	}
