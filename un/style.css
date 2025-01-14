@@ -1071,6 +1071,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	    left: 0;
 	}
 
+	.content-container .overlay-layout.reverse-order .overlay-layout-image::after,
 	.content-container .overlay-layout .overlay-layout-image::after {
 	    background: linear-gradient(to right, transparent 25%, rgba(0, 0, 0, .8) 75%);
 	}
