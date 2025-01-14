@@ -1451,7 +1451,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 769px) {
-	.content-container .featured-quote blockquote {\
+	.content-container .featured-quote blockquote {
 		position: absolute !important;
 	}
 
