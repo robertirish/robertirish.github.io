@@ -633,27 +633,15 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	border-bottom: 0;
 }
 
-.content-container .col-layout.events .col-block {
+.content-container .col-layout.outline .col-block {
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	overflow: hidden;
 	border-bottom-width: 4px;
 }
 
-.content-container .col-block.events .block-text p {
-	font-size: 16px !important;
-}
-
-.content-container .col-block.events .block-text .event-date {
-	margin-top: 16px;
-	font-weight: 600;
-	font-size: 14px;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-}
-
-.content-container .col-layout.events .col-block:hover,
-.content-container .col-layout.events .col-block:focus {
+.content-container .col-layout.outline .col-block:hover,
+.content-container .col-layout.outline .col-block:focus {
 	border-color: #009edb;
 }
 
@@ -989,11 +977,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 1281px) {
-	.content-container .col-block .event-date {
-		font-size: 16px;
-		font-size: 1.6rem;
-	}
-
 	.content-container .col-layout .col-block .block-text h3,
 	.content-container .col-layout .col-block .block-text *.style-h3,
 	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 {
