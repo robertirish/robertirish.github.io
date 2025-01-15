@@ -1445,7 +1445,8 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 .content-container .featured-quote .quote-source,
-.content-container .featured-quote .quote-source a {
+.content-container .featured-quote .quote-source a,
+.content-container .featured-quote .quote-source a cite {
 	font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff !important;
 	font-size: 20px;
