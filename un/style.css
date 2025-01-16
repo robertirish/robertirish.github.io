@@ -414,6 +414,10 @@ body[class*="node-type-"] .content-container figure {
 	max-width: 1350px !important;
 }
 
+.content-container .full-width {
+	max-width: 100% !important;
+}
+
 .content-container:after {
 	content: "";
 	display: table;
