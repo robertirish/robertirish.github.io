@@ -296,6 +296,10 @@ body[class*="node-type-"] .content-container figure {
 	padding-bottom: 0;
 }
 
+.content-container ~ .content-container {
+	padding-top: 50px;
+}
+
 .content-container.no-padding-top,
 .content-container .no-padding-top {
 	padding-top: 0 !important;
@@ -347,6 +351,10 @@ body[class*="node-type-"] .content-container figure {
 }
 
 @media screen and (min-width: 769px) {
+	.content-container ~ .content-container {
+		padding-top: 100px;
+	}
+
 	.content-container.padding-top-small,
 	.content-container .padding-top-small {
 		padding-top: 40px !important;
@@ -388,10 +396,6 @@ body[class*="node-type-"] .content-container figure {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-.content-container ~ .content-container {
-	padding-top: 100px;
 }
 
 .content-container > * {
