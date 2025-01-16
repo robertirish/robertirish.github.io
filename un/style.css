@@ -1214,7 +1214,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 /* image banner */
 .content-container .image-banner {
-	padding-top: 100px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
