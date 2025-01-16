@@ -154,7 +154,8 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 16px;
 }
 
-.content-container .invert-text .heading-underline::after {
+.content-container .invert-text .heading-underline::after,
+.content-container .heading-underline.heading-underline-white::after {
 	background-color: #fff;
 }
 
@@ -803,6 +804,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 .content-container .col-block:last-child,
 .content-container .sub-block:last-child {
 	margin-bottom: 0;
+}
+
+/* add margin to the top of following elements, e.g. buttons */
+.content-container .col-layout + * {
+	margin-top: 32px !important;
 }
 
 .content-container .block-image {
