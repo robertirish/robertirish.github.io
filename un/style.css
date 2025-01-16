@@ -436,8 +436,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 .content-container p *,
 .content-container figcaption *,
 .content-container cite * {
-	font-size: inherit !important;
+	border-color: inherit;
 	line-height: inherit !important;
+	font-size: inherit !important;
+	font-style: inherit;
+	color: inherit;
 }
 
 .content-container .lede {
@@ -505,7 +508,19 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	}
 }
 
+
+/* circle mask for images */
+.mask-circle {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
 /* sidebar widget */
+.content-container .sidebar-widget,
 .content-container .unodc-link {
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -521,15 +536,20 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	margin-right: auto;
 }
 
+.content-container .sidebar-widget:hover,
+.content-container .sidebar-widget:focus,
 .content-container .unodc-link:hover,
 .content-container .unodc-link:focus {
 	background-color: #e4eef4;
 }
 
+.content-container .sidebar-widget .unodc-content p,
 .content-container .unodc-link .unodc-content p {
 	padding-bottom: 8px;
 }
 
+.content-container .sidebar-widget .sidebar-content p,
+.content-container .sidebar-widget .sidebar-content p strong,
 .content-container .unodc-link .unodc-content p,
 .content-container .unodc-link .unodc-content p strong {
 	line-height: 1.4 !important;
@@ -537,26 +557,32 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 1.6rem !important;
 }
 
+.content-container .sidebar-widget img,
 .content-container .unodc-link img {
 	width: 30% !important;
 	height: auto;
 	padding-right: 16px;
 }
 
+.content-container .sidebar-widget .sidebar-content,
 .content-container .unodc-link .unodc-content {
 	width: 70%;
 	height: auto;
 }
 
 @media screen and (min-width: 769px) {
+	.content-container .sidebar-widget img,
 	.content-container .unodc-link img {
 		width: 20% !important;
 	}
 
+	.content-container .sidebar-widget .sidebar-content,
 	.content-container .unodc-link .unodc-content {
 		width: 80%;
 	}
 
+	.content-container .sidebar-widget .sidebar-content p,
+	.content-container .sidebar-widget .sidebar-content p strong,
 	.content-container .unodc-link .unodc-content p,
 	.content-container .unodc-link .unodc-content p strong {
 		margin-top: 0;
@@ -566,6 +592,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 1351px) {
+	.content-container .sidebar-widget,
 	.content-container .unodc-link {
 		margin-top: 0 !important;
 		border: 1px solid #ccc;
@@ -576,19 +603,24 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		flex-direction: column;
 	}
 
+	.content-container .sidebar-widget img,
 	.content-container .unodc-link img {
 		width: 100% !important;
 		padding-right: 0;
 	}
 
+	.content-container .sidebar-widget .sidebar-content,
 	.content-container .unodc-link .unodc-content {
 		width: 100%;
 	}
 
+	.content-container .sidebar-widget .sidebar-content p,
 	.content-container .unodc-link .unodc-content p {
 		margin-top: 16px;
 	}
 
+	.content-container .sidebar-widget .sidebar-content p,
+	.content-container .sidebar-widget .sidebar-content p strong,
 	.content-container .unodc-link .unodc-content p,
 	.content-container .unodc-link .unodc-content p strong {
 		font-size: 16px !important;
@@ -833,7 +865,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 769px) {
-
 	.content-container .two-col,
 	.content-container .three-col {
 		flex-flow: row wrap;
@@ -1741,7 +1772,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 980px) {
-
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message>em {
 		font-size: 20px !important;
@@ -1749,7 +1779,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 1120px) {
-
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message>em {
 		font-size: 24px !important;
@@ -1757,7 +1786,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 @media screen and (min-width: 1280px) {
-
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message>em {
 		font-size: 28px !important;
