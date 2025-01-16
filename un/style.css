@@ -154,11 +154,6 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 16px;
 }
 
-.content-container .invert-text .heading-underline::after,
-.content-container .heading-underline.heading-underline-white::after {
-	background-color: #fff;
-}
-
 .content-container h1.heading-underline::after,
 .content-container h2.heading-underline::after,
 .content-container h3.heading-underline::after {
@@ -220,6 +215,15 @@ body[class*="node-type-"] .content-container figure {
 	border-bottom: solid 0.1rem #fff;
 }
 
+.content-container .black-text p a {
+	border-bottom: dotted 0.1rem #000;
+}
+
+.content-container .black-text p a:hover,
+.content-container .black-text p a:focus {
+	border-bottom: solid 0.1rem #000;
+}
+
 .content-container .small {
 	font-size: 14px !important;
 }
@@ -264,6 +268,11 @@ body[class*="node-type-"] .content-container figure {
 
 	.content-container > * + h4 {
 		margin-top: 24px;
+	}
+
+	.content-container .invert-text .heading-underline::after,
+	.content-container .heading-underline.heading-underline-white::after {
+		background-color: #fff;
 	}
 }
 
@@ -431,6 +440,10 @@ body[class*="node-type-"] .content-container figure {
 .content-container.background-color-dark *,
 .content-container .invert-text {
 	color: #fff !important;
+}
+
+.content-container .black-text {
+	color: #000 !important;
 }
 
 .content-container.no-padding {
