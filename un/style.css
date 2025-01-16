@@ -13,8 +13,7 @@ html {
 }
 
 .property_home_page_section_first,
-.property_home_page_section_first{
- + .property_home_page_section {
+.property_home_page_section_first + .property_home_page_section {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
