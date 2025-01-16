@@ -154,6 +154,10 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 16px;
 }
 
+.content-container .invert-text .heading-underline::after {
+	background-color: #fff;
+}
+
 .content-container h1.heading-underline::after,
 .content-container h2.heading-underline::after,
 .content-container h3.heading-underline::after {
@@ -204,14 +208,14 @@ body[class*="node-type-"] .content-container figure {
 }
 
 .content-container.background-color-dark p a,
-.content-container .background-color-dark p a {
+.content-container .invert-text p a {
 	border-bottom: dotted 0.1rem #fff;
 }
 
 .content-container.background-color-dark p a:hover,
 .content-container.background-color-dark p a:focus,
-.content-container .background-color-dark p a:hover,
-.content-container .background-color-dark p a:focus {
+.content-container .invert-text p a:hover,
+.content-container .invert-text p a:focus {
 	border-bottom: solid 0.1rem #fff;
 }
 
@@ -423,7 +427,8 @@ body[class*="node-type-"] .content-container figure {
 	background-color: #c1e7f7;
 }
 
-.content-container.background-color-dark * {
+.content-container.background-color-dark *,
+.content-container .invert-text {
 	color: #fff !important;
 }
 
