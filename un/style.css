@@ -8,10 +8,6 @@ html {
 	scroll-behavior: smooth !important;
 }
 
-* {
-	scroll-margin: 80px !important;
-}
-
 html {
 	overflow-x: hidden !important;
 }
@@ -285,6 +281,7 @@ body[class*="node-type-"] .content-container figure {
 	}
 }
 
+/* content container */
 .content-container {
 	position: relative;
 	padding-left: 0;
@@ -311,17 +308,17 @@ body[class*="node-type-"] .content-container figure {
 
 .content-container.padding-top-small,
 .content-container .padding-top-small {
-	padding-top: 40px !important;
+	padding-top: 20px !important;
 }
 
 .content-container.padding-top,
 .content-container .padding-top {
-	padding-top: 100px !important;
+	padding-top: 50px !important;
 }
 
 .content-container.padding-bottom,
 .content-container .padding-bottom {
-	padding-bottom: 100px !important;
+	padding-bottom: 50px !important;
 }
 
 .content-container.no-margin-top,
@@ -334,19 +331,51 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 0 !important;
 }
 
-.content-container.margin-bottom,
-.content-container .margin-bottom {
-	margin-bottom: 100px !important;
-}
-
 .content-container.margin-top-small,
 .content-container .margin-top-small {
-	margin-top: 40px !important;
+	margin-top: 20px !important;
 }
 
 .content-container.margin-top,
 .content-container .margin-top {
-	margin-top: 100px !important;
+	margin-top: 50px !important;
+}
+
+.content-container.margin-bottom,
+.content-container .margin-bottom {
+	margin-bottom: 50px !important;
+}
+
+@media screen and (min-width: 769px) {
+	.content-container.padding-top-small,
+	.content-container .padding-top-small {
+		padding-top: 40px !important;
+	}
+
+	.content-container.padding-top,
+	.content-container .padding-top {
+		padding-top: 100px !important;
+	}
+
+	.content-container.padding-bottom,
+	.content-container .padding-bottom {
+		padding-bottom: 100px !important;
+	}
+
+	.content-container.margin-top-small,
+	.content-container .margin-top-small {
+		margin-top: 40px !important;
+	}
+
+	.content-container.margin-top,
+	.content-container .margin-top {
+		margin-top: 100px !important;
+	}
+
+	.content-container.margin-bottom,
+	.content-container .margin-bottom {
+		margin-bottom: 100px !important;
+	}
 }
 
 .content-container .max-width {
@@ -355,7 +384,6 @@ body[class*="node-type-"] .content-container figure {
 	max-width: 1350px !important;
 }
 
-/* content container */
 .content-container:after {
 	content: "";
 	display: table;
