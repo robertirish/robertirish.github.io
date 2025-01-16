@@ -13,7 +13,8 @@ html {
 }
 
 .property_home_page_section_first,
-.property_home_page_section_first+.property_home_page_section {
+.property_home_page_section_first{
+ + .property_home_page_section {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
@@ -129,17 +130,17 @@ body[class*="node-type-"] .content-container figure {
 	margin-bottom: 16px;
 }
 
-.content-container>*+h2,
-.content-container>*+.style-h2 {
+.content-container > * + h2,
+.content-container > * + .style-h2 {
 	margin-top: 40px;
 }
 
-.content-container>*+h3,
-.content-container>*+.style-h3 {
+.content-container > * + h3,
+.content-container > * + .style-h3 {
 	margin-top: 24px;
 }
 
-.content-container>*+h4 {
+.content-container > * + h4 {
 	margin-top: 16px;
 }
 
@@ -252,17 +253,17 @@ body[class*="node-type-"] .content-container figure {
 		font-size: 2rem;
 	}
 
-	.content-container>*+h2,
-	.content-container>*+.style-h2 {
+	.content-container > * + h2,
+	.content-container > * + .style-h2 {
 		margin-top: 60px;
 	}
 
-	.content-container>*+h3,
-	.content-container>*+.style-h3 {
+	.content-container > * + h3,
+	.content-container > * + .style-h3 {
 		margin-top: 40px;
 	}
 
-	.content-container>*+h4 {
+	.content-container > * + h4 {
 		margin-top: 24px;
 	}
 }
@@ -445,19 +446,19 @@ body[class*="node-type-"] .content-container figure {
 	border-bottom: 1px solid #ddd;
 }
 
-.content-container>*:not(div) {
+.content-container > *:not(div) {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 800px;
 	width: 100%;
 }
 
-.content-container>* *:not(div, figure) {
+.content-container > * *:not(div, figure) {
 	width: 100%;
 }
 
-.content-container>h1,
-.content-container>h2 {
+.content-container > h1,
+.content-container > h2 {
 	text-align: center;
 }
 
@@ -545,7 +546,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2rem;
 	}
 
-	.content-container>.lede {
+	.content-container > .lede {
 		font-size: 24px !important;
 		font-size: 2.4rem !important;
 	}
@@ -696,9 +697,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	background-color: #e4eef4;
 }
 
-.content-container .col-layout.background-color .col-block:has(> .sub-block),
-.content-container .col-layout.background-color .col-block:has(> .sub-block):hover,
-.content-container .col-layout.background-color .col-block:has(> .sub-block):focus {
+.content-container .col-layout.background-color .col-block:has( >  .sub-block),
+.content-container .col-layout.background-color .col-block:has( >  .sub-block):hover,
+.content-container .col-layout.background-color .col-block:has( >  .sub-block):focus {
 	background-color: transparent;
 }
 
@@ -715,9 +716,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	border-bottom-color: #009edb;
 }
 
-.content-container .col-layout.border .col-block:has(> .sub-block),
-.content-container .col-layout.border .col-block:has(> .sub-block):hover,
-.content-container .col-layout.border .col-block:has(> .sub-block):focus {
+.content-container .col-layout.border .col-block:has( >  .sub-block),
+.content-container .col-layout.border .col-block:has( >  .sub-block):hover,
+.content-container .col-layout.border .col-block:has( >  .sub-block):focus {
 	border-bottom: 0;
 }
 
@@ -776,15 +777,15 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	align-items: flex-start;
 }
 
-.content-container .two-col .col-block:nth-child(2n+1):last-child,
-.content-container .two-col .sub-block:nth-child(2n+1):last-child,
-.content-container .three-col .col-block:nth-child(3n+1):last-child,
-.content-container .three-col .sub-block:nth-child(3n+1):last-child {
+.content-container .two-col .col-block:nth-child(2n + 1):last-child,
+.content-container .two-col .sub-block:nth-child(2n + 1):last-child,
+.content-container .three-col .col-block:nth-child(3n + 1):last-child,
+.content-container .three-col .sub-block:nth-child(3n + 1):last-child {
 	margin-right: auto;
 }
 
-.content-container .three-col .col-block:nth-child(3n+2):last-child,
-.content-container .three-col .sub-block:nth-child(3n+2):last-child {
+.content-container .three-col .col-block:nth-child(3n + 2):last-child,
+.content-container .three-col .sub-block:nth-child(3n + 2):last-child {
 	margin-right: calc(33.3333333% + 12px);
 }
 
@@ -864,9 +865,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 2.8rem;
 }
 
-.content-container .col-layout .col-block .block-text h3+p,
-.content-container .col-layout .col-block .block-text *.style-h3+p,
-.content-container .col-layout.feature-story .col-block:first-child .block-text h4+p {
+.content-container .col-layout .col-block .block-text h3 + p,
+.content-container .col-layout .col-block .block-text *.style-h3 + p,
+.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
 	font-size: 20px;
 	font-size: 2rem;
 }
@@ -876,7 +877,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 2.4rem;
 }
 
-.content-container .col-layout .col-block .block-text h4+p {
+.content-container .col-layout .col-block .block-text h4 + p {
 	font-size: 16px;
 	font-size: 1.6rem;
 }
@@ -976,7 +977,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 1.6rem;
 	}
 
-	.content-container .col-block:has(> .sub-block) {
+	.content-container .col-block:has( >  .sub-block) {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -1019,9 +1020,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2.4rem;
 	}
 
-	.content-container .col-layout .col-block .block-text h3+p,
-	.content-container .col-layout .col-block .block-text *.style-h3+p,
-	.content-container .col-layout.feature-story .col-block:first-child .block-text h4+p {
+	.content-container .col-layout .col-block .block-text h3 + p,
+	.content-container .col-layout .col-block .block-text *.style-h3 + p,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
 		font-size: 20px;
 		font-size: 2rem;
 	}
@@ -1031,7 +1032,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2rem;
 	}
 
-	.content-container .col-layout .col-block .block-text h4+p {
+	.content-container .col-layout .col-block .block-text h4 + p {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
@@ -1050,9 +1051,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2.8rem;
 	}
 
-	.content-container .col-layout .col-block .block-text h3+p,
-	.content-container .col-layout .col-block .block-text *.style-h3+p,
-	.content-container .col-layout.feature-story .col-block:first-child .block-text h4+p {
+	.content-container .col-layout .col-block .block-text h3 + p,
+	.content-container .col-layout .col-block .block-text *.style-h3 + p,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
 		font-size: 20px;
 		font-size: 2rem;
 	}
@@ -1062,7 +1063,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2.4rem;
 	}
 
-	.content-container .col-layout .col-block .block-text h4+p {
+	.content-container .col-layout .col-block .block-text h4 + p {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
@@ -1076,9 +1077,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2.8rem;
 	}
 
-	.content-container .col-layout .col-block .block-text h3+p,
-	.content-container .col-layout .col-block .block-text *.style-h3+p,
-	.content-container .col-layout.feature-story .col-block:first-child .block-text h4+p {
+	.content-container .col-layout .col-block .block-text h3 + p,
+	.content-container .col-layout .col-block .block-text *.style-h3 + p,
+	.content-container .col-layout.feature-story .col-block:first-child .block-text h4 + p {
 		font-size: 20px;
 		font-size: 2rem;
 	}
@@ -1088,7 +1089,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2.4rem;
 	}
 
-	.content-container .col-layout .col-block .block-text h4+p {
+	.content-container .col-layout .col-block .block-text h4 + p {
 		font-size: 16px;
 		font-size: 1.6rem;
 	}
@@ -1163,10 +1164,10 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	    left: 0;
 	}
 
-	.content-container .overlay-layout.reverse-order .overlay-layout-image::after,
+	/*.content-container .overlay-layout.reverse-order .overlay-layout-image::after,
 	.content-container .overlay-layout .overlay-layout-image::after {
 	    background: linear-gradient(to right, transparent 25%, rgba(0, 0, 0, .5) 100%);
-	}
+	}*/
 
 	.content-container .overlay-layout .overlay-layout-text {
 		width: 50%;
@@ -1178,9 +1179,9 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		padding: 32px 5% 32px 0;
 	}
 
-	.content-container .overlay-layout .overlay-layout-text * {
+	/*.content-container .overlay-layout .overlay-layout-text * {
 		color: #fff;
-	}
+	}*/
 
 	.content-container .overlay-layout .overlay-layout-text p {
 		font-size: 16px;
@@ -1205,7 +1206,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	padding-right: 0;
 }
 
-.content-container .image-banner-content>* {
+.content-container .image-banner-content > * {
 	max-width: 760px !important;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -1400,7 +1401,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 }
 
 /* parallax */
-.content-container .main-container.container .parallax+.content-container h1 {
+.content-container .main-container.container .parallax + .content-container h1 {
 	display: block !important;
 }
 
@@ -1416,7 +1417,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	overflow: hidden;
 }
 
-.parallax+* {
+.parallax + * {
 	padding-top: 40px !important;
 }
 
@@ -1475,7 +1476,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	background-color: #009edb;
 }
 
-.content-container .featured-quote:has(> .quote-image) {
+.content-container .featured-quote:has( >  .quote-image) {
 	padding-bottom: 0;
 }
 
@@ -1560,7 +1561,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	padding: 0 8px;
 }
 
-.content-container .featured-quote:has(> .quote-image) blockquote .quote-text::before {
+.content-container .featured-quote:has( >  .quote-image) blockquote .quote-text::before {
 	display: block;
 	margin: 0;
 	margin-right: 4px;
@@ -1580,7 +1581,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		position: absolute !important;
 	}
 
-	.content-container .featured-quote:has(> .quote-image) {
+	.content-container .featured-quote:has( >  .quote-image) {
 		padding-top: 0;
 		padding-bottom: 0;
 		min-height: 400px;
@@ -1605,11 +1606,11 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		max-width: 600px;
 	}
 
-	.content-container .featured-quote:has(> .quote-image) blockquote .quote-text::before {
+	.content-container .featured-quote:has( >  .quote-image) blockquote .quote-text::before {
 		display: none;
 	}
 
-	.content-container .featured-quote:has(> .quote-image) blockquote::before {
+	.content-container .featured-quote:has( >  .quote-image) blockquote::before {
 		display: block;
 		position: absolute;
 		top: -38px;
@@ -1635,8 +1636,8 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		margin-right: auto;
 	}
 
-	.content-container .featured-quote:has(> .quote-image) .quote-text,
-	.content-container .featured-quote:has(> .quote-image) .quote-source {
+	.content-container .featured-quote:has( >  .quote-image) .quote-text,
+	.content-container .featured-quote:has( >  .quote-image) .quote-source {
 		margin-left: 60px;
 		margin-right: 0;
 		max-width: 100%;
@@ -1648,12 +1649,12 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 2.4rem;
 	}
 
-	.content-container .featured-quote:has(> .quote-image) .quote-text {
+	.content-container .featured-quote:has( >  .quote-image) .quote-text {
 		max-width: 100%;
 		width: 55%;
 	}
 
-	.content-container .featured-quote:has(> .quote-image) .quote-source {
+	.content-container .featured-quote:has( >  .quote-image) .quote-source {
 		max-width: 100%;
 		width: 45%;
 	}
@@ -1823,21 +1824,21 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 @media screen and (min-width: 980px) {
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
-	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message>em {
+	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message > em {
 		font-size: 20px !important;
 	}
 }
 
 @media screen and (min-width: 1120px) {
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
-	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message>em {
+	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message > em {
 		font-size: 24px !important;
 	}
 }
 
 @media screen and (min-width: 1280px) {
 	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message,
-	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message>em {
+	.fact-card .fact-card-wrapper .fact-card-inner .fact-card-message > em {
 		font-size: 28px !important;
 	}
 }
