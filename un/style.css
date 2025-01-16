@@ -3,9 +3,13 @@
 * -------------------------------------------------------------------------------*/
 
 /* reset unwanted styles */
-*, 
+*,
 html {
 	scroll-behavior: smooth !important;
+}
+
+* {
+	scroll-margin: 80px !important;
 }
 
 html {
