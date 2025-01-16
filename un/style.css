@@ -1157,11 +1157,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	    background: linear-gradient(to right, transparent 25%, #000 75%);
 	}
 
-	/* image specific positioning */
-	.content-container .overlay-layout.reverse-order .overlay-layout-image img {
-		left: -25%;
-	}
-
 	.content-container .overlay-layout .overlay-layout-text {
 		width: 50%;
 		max-width: 800px;
