@@ -197,14 +197,22 @@ body[class*="node-type-"] .content-container figure {
 	border-bottom: solid 0.1rem #009edb;
 }
 
-.content-container.background-color-dark p a {
-	border-bottom: dotted 0.1rem #fff;
-}
-
 .content-container p a:hover,
 .content-container p a:focus {
 	color: #009edb;
 	border-bottom: solid 0.1rem #009edb;
+}
+
+.content-container.background-color-dark p a,
+.content-container .background-color-dark p a {
+	border-bottom: dotted 0.1rem #fff;
+}
+
+.content-container.background-color-dark p a:hover,
+.content-container.background-color-dark p a:focus,
+.content-container .background-color-dark p a:hover,
+.content-container .background-color-dark p a:focus {
+	border-bottom: solid 0.1rem #fff;
 }
 
 .content-container .small {
