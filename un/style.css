@@ -1,7 +1,13 @@
 /* -------------------------------------------------------------------------------
 * united nations peace and security stylesheet
 * -------------------------------------------------------------------------------*/
+
 /* reset unwanted styles */
+*, 
+html {
+	scroll-behavior: smooth !important;
+}
+
 html {
 	overflow-x: hidden !important;
 }
