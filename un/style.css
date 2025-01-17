@@ -531,8 +531,6 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 .content-container a.button {
 	display: inline-block;
-	margin-left: 16px;
-	margin-right: 16px;
 	letter-spacing: 1px;
 	line-height: 1;
 	font-weight: 700;
