@@ -267,7 +267,6 @@ body[class*="node-type-"] .content-container figure {
 		margin-top: 24px;
 	}
 
-	.content-container .invert-text-desktop .heading-underline::after,
 	.content-container .heading-underline.heading-underline-white::after {
 		background-color: #fff;
 	}
