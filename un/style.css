@@ -442,7 +442,7 @@ body[class*="node-type-"] .content-container figure {
 }
 
 .content-container.background-color-dark *,
-..content-container .invert-text * {
+.content-container .invert-text * {
 	color: #fff !important;
 }
 
