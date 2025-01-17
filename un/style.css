@@ -670,6 +670,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 @media screen and (min-width: 1351px) {
 	.content-container .sidebar-widget {
+		margin-top: 0;
 		position: absolute;
 		top: 0;
 		left: calc((100vw + 800px) / 2 + 16px);
