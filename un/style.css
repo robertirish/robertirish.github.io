@@ -416,7 +416,6 @@ body[class*="node-type-"] .content-container figure {
 .content-container .max-width {
 	margin-left: auto !important;
 	margin-right: auto !important;
-	max-width: 1350px !important;
 }
 
 .content-container .full-width {
@@ -482,15 +481,22 @@ body[class*="node-type-"] .content-container figure {
 	text-align: center;
 }
 
-body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
+body[class*="property-type-"] .content-container > *:not(h1, h2, h3, h4, h5, h6) {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.618;
 }
 
 @media screen and (min-width: 769px) {
+	.content-container .max-width {
+		max-width: 1350px !important;
+	}
+
 	body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 20px;
 		font-size: 2rem;
