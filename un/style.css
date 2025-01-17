@@ -591,13 +591,23 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 
 /* circle mask for images */
-.mask-circle {
+.content-container .mask-circle {
 	width: 100% !important;
 	height: 0 !important;
 	padding-bottom: 100% !important;
 	border-radius: 50% !important;
 	position: relative !important;
 	overflow: hidden !important;
+}
+
+.content-container .mask-circle a img {
+	transition: transform .25s ease-in-out;
+}
+
+.content-container .mask-circle a:hover img,
+.content-container .mask-circle a:focus img,
+.content-container .mask-circle a:active img {
+    transform: translate(-50%, -50%) scale(1.05);
 }
 
 /* sidebar widget */
