@@ -203,15 +203,12 @@ body[class*="node-type-"] .content-container figure {
 	border-bottom: solid 0.1rem #009edb;
 }
 
-.content-container.background-color-dark p a,
-.content-container .invert-text p a {
+.content-container.background-color-dark p a {
 	border-bottom: dotted 0.1rem #fff;
 }
 
 .content-container.background-color-dark p a:hover,
-.content-container.background-color-dark p a:focus,
-.content-container .invert-text p a:hover,
-.content-container .invert-text p a:focus {
+.content-container.background-color-dark p a:focus {
 	border-bottom: solid 0.1rem #fff;
 }
 
@@ -270,9 +267,18 @@ body[class*="node-type-"] .content-container figure {
 		margin-top: 24px;
 	}
 
-	.content-container .invert-text .heading-underline::after,
+	.content-container .invert-text-desktop .heading-underline::after,
 	.content-container .heading-underline.heading-underline-white::after {
 		background-color: #fff;
+	}
+
+	.content-container .invert-text-desktop p a {
+		border-bottom: dotted 0.1rem #fff;
+	}
+
+	.content-container .invert-text-desktop p a:hover,
+	.content-container .invert-text-desktop p a:focus {
+		border-bottom: solid 0.1rem #fff;
 	}
 }
 
@@ -441,8 +447,7 @@ body[class*="node-type-"] .content-container figure {
 	background-color: #c1e7f7;
 }
 
-.content-container.background-color-dark *,
-.content-container .invert-text * {
+.content-container.background-color-dark * {
 	color: #fff !important;
 }
 
@@ -490,6 +495,10 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 	body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 		font-size: 20px;
 		font-size: 2rem;
+	}
+
+	.content-container .invert-text-desktop * {
+		color: #fff !important;
 	}
 }
 
@@ -1149,7 +1158,7 @@ body[class*="property-type-"] .content-container *:not(h1, h2, h3, h4, h5, h6) {
 
 /* take action intro */
 .content-container #take-action-intro .overlay-layout-image img {
-	filter: graysale(100%) brightness(125%) contrast(125%);
+	filter: grayscale(100%) brightness(125%) contrast(125%);
 }
 
 @media screen and (min-width: 769px) {
