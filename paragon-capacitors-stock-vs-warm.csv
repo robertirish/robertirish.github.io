@@ -1,0 +1,23 @@
+Ref,Stock_value,Stock_type,Warm_notes,Qty
+C1,22nF,Film box,Optional 27nF or 33nF film for fuller bass; keep 22nF for stock,1
+C2,100pF,Ceramic,Keep 100pF or try 82pF/68pF film/C0G for slightly softer highs,1
+C3,10nF,Film box,Prefer stock 10nF PP/PET,1
+C4,10nF,Film box,Match C3,1
+C5,100nF,Film box,Stock 100nF; optional 220nF only if layout allows and you want softer HF,1
+C6,10nF,Film box,Match C3,1
+C7,10nF,Film box,Match C3,1
+C8,1uF,Film box,Warmer: try 2.2uF film same footprint if PCB fits,1
+C9,1uF,Electrolytic 5mm 25V+,Audio-grade low-ESR optional; same value for stock voicing,1
+C10,10uF,Electrolytic 5mm 25V+,Audio-grade optional; same value,1
+C11,100uF,Electrolytic 5mm 25V+,Power rail; same value,1
+C12,22nF,Film box,Match C1,1
+C13,100pF,Ceramic,Match C2,1
+C14,10nF,Film box,Match C3,1
+C15,10nF,Film box,Match C3,1
+C16,100nF,Film box,Match C5,1
+C17,10nF,Film box,Match C3,1
+C18,10nF,Film box,Match C3,1
+C19,1uF,Film box,Match C8,1
+C20,1uF,Electrolytic 5mm 25V+,Match C9,1
+C21,10uF,Electrolytic 5mm 25V+,Match C10,1
+C22,10uF,Electrolytic 5mm 25V+,Match C10,1
