@@ -1,0 +1,27 @@
+Ref,Value_Ohm,Qty,Stock_typical,Warmer_build
+R1,1000000,1,Metal film 1/4W,Carbon film 1/4W
+R2,1000000,1,Metal film 1/4W,Carbon film 1/4W
+R3,1000_or_100000,1,Metal film 1/4W (choose standard or high gain),Carbon film 1/4W same value
+R4,33000,1,Metal film 1/4W,Carbon film 1/4W
+R5,27000,1,Metal film 1/4W,Carbon film 1/4W
+R6,10000,1,Metal film 1/4W,Carbon comp 1/4W (or carbon film)
+R7,220000,1,Metal film 1/4W,Carbon film 1/4W
+R8,6800,1,Metal film 1/4W,Carbon film 1/4W
+R9,1000,1,Metal film 1/4W,Carbon comp 1/4W (or carbon film)
+R10,6800,1,Metal film 1/4W,Carbon comp 1/4W (or carbon film)
+R11,1000000,1,Metal film 1/4W,Carbon film 1/4W
+R12,47000,1,Metal film 1/4W,Carbon film 1/4W
+R13,47000,1,Metal film 1/4W,Carbon film 1/4W
+R14,4700,1,Metal film 1/4W,Carbon film 1/4W
+R15,1000000,1,Metal film 1/4W,Carbon film 1/4W
+R16,1000000,1,Metal film 1/4W,Carbon film 1/4W
+R17,1000_or_100000,1,Metal film 1/4W (match R3 choice),Carbon film 1/4W same value
+R18,33000,1,Metal film 1/4W,Carbon film 1/4W
+R19,27000,1,Metal film 1/4W,Carbon film 1/4W
+R20,10000,1,Metal film 1/4W,Carbon comp 1/4W (or carbon film)
+R21,220000,1,Metal film 1/4W,Carbon film 1/4W
+R22,6800,1,Metal film 1/4W,Carbon film 1/4W
+R23,1000,1,Metal film 1/4W,Carbon comp 1/4W (or carbon film)
+R24,6800,1,Metal film 1/4W,Carbon comp 1/4W (or carbon film)
+R25,1000000,1,Metal film 1/4W,Carbon film 1/4W
+R26,4700,1,Metal film 1/4W,Carbon film 1/4W
