@@ -6,6 +6,10 @@ This document is for **PedalPCB Paragon**–style builds. **Stock values** are t
 
 ---
 
+## Import files for distributor carts
+
+Ready-to-upload BOM-style CSVs live in **`import/`** — see **`import/README_IMPORT.md`** for Mouser, Digi-Key, and Tayda quick-order steps. Those files use manufacturer part numbers so you can populate each site’s BOM tool in your browser (the checkout cart itself cannot be filled from here).
+
 ## How to use this
 
 1. **Stock column:** Order these if you want the documented stock Paragon/KoT-clone baseline (metal film + listed cap types is typical).

@@ -1,0 +1,27 @@
+Manufacturer Part Number,Manufacturer,Quantity,Customer Part Number,Description
+CF14JT1M00,Stackpole Electronics Inc,6,R,R carbon film 1M 1/4W 5% — R1 R2 R11 R15 R16 R25
+CF14JT1K00,Stackpole Electronics Inc,2,R,R carbon film 1k 1/4W 5% — R3 R17 standard gain (omit if only building high gain)
+CF14JT100K,Stackpole Electronics Inc,2,R,R carbon film 100k 1/4W 5% — R3 R17 high gain (omit if only standard)
+CF14JT33K0,Stackpole Electronics Inc,2,R,R carbon film 33k — R4 R18
+CF14JT27K0,Stackpole Electronics Inc,2,R,R carbon film 27k — R5 R19
+CF14JT220K,Stackpole Electronics Inc,2,R,R carbon film 220k — R7 R21
+CF14JT6K80,Stackpole Electronics Inc,2,R,R carbon film 6k8 — R8 R22
+CF14JT47K0,Stackpole Electronics Inc,2,R,R carbon film 47k — R12 R13
+CF14JT4K70,Stackpole Electronics Inc,2,R,R carbon film 4k7 — R14 R26
+RC07GF103J,Stackpole Electronics Inc,2,R,R carbon comp 10k 1/4W — R6 R20
+RC07GF102J,Stackpole Electronics Inc,2,R,R carbon comp 1k 1/4W — R9 R23
+RC07GF682J,Stackpole Electronics Inc,2,R,R carbon comp 6k8 1/4W — R10 R24
+MKS2D022201A00JSSD,Wima,2,C,Film 22nF MKS2 5mm — C1 C12 (verify pitch vs PCB)
+MKS2D021003B00KSSD,Wima,8,C,Film 10nF MKS2 5mm — C3 C4 C6 C7 C14 C15 C17 C18
+MKS2D031004B00MSSD,Wima,2,C,Film 100nF MKS2 5mm — C5 C16
+MKS4D013302D00JSSD,Wima,2,C,Film 1uF MKS4 7.5mm — C8 C19 (verify height)
+C410C101J5G5TA7201,Kemet,2,C,C0G 100pF 50V 5mm — C2 C13
+UVR1H010MDD1TA,Nichicon,2,C,Alum elec 1uF 50V 5mm — C9 C20
+UVR1E100MDD1TA,Nichicon,3,C,Alum elec 10uF 25V 5mm — C10 C21 C22
+UVR1E101MED1TA,Nichicon,1,C,Alum elec 100uF 25V 6.3mm — C11
+NJM4580DD,New Japan Radio Co Ltd,2,IC,Dual op-amp DIP-8 — IC1 IC2
+TC1044SCPA,Microchip Technology,1,IC,Charge pump DIP-8 — IC3
+MA856,Toshiba,8,D,Signal diode DO-34 — D1-D4 D8-D11 (verify stock; subs per build doc)
+1S1588,Toshiba,4,D,Signal diode DO-35 — D5 D6 D12 D13
+1N5817,onsemi,3,D,Schottky 20V 1A DO-41 — D7 D14 D15
+MKS4D032202C00JSSD,Wima,0,C,OPTIONAL 2.2uF film — C8 C19 warmer (set qty 2 in BOM tool if using)

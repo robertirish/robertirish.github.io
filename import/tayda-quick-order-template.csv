@@ -1,0 +1,33 @@
+Qty,Tayda_SKU,Search_hint
+6,,1M carbon film 1/4W axial
+2,,1k carbon film 1/4W (R3 R17 std — skip if 100k only)
+2,,100k carbon film 1/4W (R3 R17 high gain — skip if 1k only)
+2,,33k carbon film 1/4W
+2,,27k carbon film 1/4W
+2,,10k carbon composition 1/4W
+2,,220k carbon film 1/4W
+2,,6.8k carbon film 1/4W
+2,,1k carbon composition 1/4W
+2,,6.8k carbon composition 1/4W
+2,,47k carbon film 1/4W
+2,,4.7k carbon film 1/4W
+2,,22nF film box 5mm pitch
+8,,10nF film box 5mm pitch
+2,,100nF film box 5mm pitch
+2,,1uF film box (match PCB height)
+2,,100pF ceramic NP0/C0G 5mm
+2,,1uF radial electrolytic 25–50V 5mm
+3,,10uF radial electrolytic 25V 5mm
+1,,100uF radial electrolytic 25V
+2,,JRC4580 or NJM4580 DIP-8
+1,,TC1044 DIP-8
+8,,MA856 or sub per docs
+4,,1S1588
+3,,1N5817
+2,,A100K pot 16mm RA PCB
+2,,B25K pot 16mm RA PCB
+2,,B100K pot 16mm RA PCB
+2,,50k trimmer 3362P style
+1,,4P DIP switch
+1,,9-pin header 2.54mm
+0,,OPTIONAL 2.2uF film for C8 C19 — qty 2 if warmer coupling
