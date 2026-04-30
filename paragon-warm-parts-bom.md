@@ -8,7 +8,9 @@ This document is for **PedalPCB Paragon**–style builds. **Stock values** are t
 
 ## Import files for distributor carts
 
-Ready-to-upload BOM-style CSVs live in **`import/`** — see **`import/README_IMPORT.md`** for Mouser, Digi-Key, and Tayda quick-order steps. Those files use manufacturer part numbers so you can populate each site’s BOM tool in your browser (the checkout cart itself cannot be filled from here).
+**PedalPCB Paragon build doc (stock BOM):** Use **`import/mouser-bom-paragon-builddoc.csv`** and **`import/digikey-bom-paragon-builddoc.csv`** — metal film resistors and film/ceramic/electro caps per the [official PDF](https://docs.pedalpcb.com/project/Paragon.pdf). See **`import/README_IMPORT.md`** for Mouser / Digi-Key steps and **`import/tayda-quick-order-template.csv`** for Tayda (fill SKUs from the site or Paragon_Labels PDF).
+
+Optional warmer-build imports (`*-paragon-warmer.csv`) match the carbon film / comp discussion elsewhere in this doc, not the stock build doc.
 
 ## How to use this
 

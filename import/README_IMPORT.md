@@ -1,52 +1,43 @@
-# Import these Paragon “warmer” parts into distributor carts
+# Paragon import files (PedalPCB build doc)
 
-This folder has **machine-readable BOMs** you upload to each site’s BOM / quick-order tool. The agent **cannot** log into your accounts or click “Add to cart” for you; use the files below in your browser.
+Source: [Paragon parts list (PDF)](https://docs.pedalpcb.com/project/Paragon.pdf) — **metal film 1/4 W resistors**, film box caps per footprint notes, 100 pF **ceramic** (C2, C13), radial **electrolytics** (25 V min, 5 mm), JRC/NJM **4580** ×2, **TC1044** ×1, diodes as listed.
 
-## Mouser
+The agent **cannot** add items to your live shopping carts. Upload these CSVs in your browser to each distributor’s **BOM / myLists** tool.
 
-1. Sign in at [mouser.com](https://www.mouser.com) → **Services & Tools** → **BOM Tool** → **Import a new BOM**.
-2. Upload `mouser-bom-paragon-warmer.csv` (or copy-paste columns).
-3. Map **Manufacturer Part Number** and **Quantity**; set **Customer Part Number** if you want labels on bags.
-4. **Delete or zero** lines you do not need: e.g. use **either** `CF14JT1K00` **or** `CF14JT100K` for R3/R17 (or keep both for a swap kit). Set optional `MKS4D032202C00JSSD` to quantity **2** only if you want 2.2 µF warmer coupling caps.
-5. Resolve any **no match** lines (obsolete diodes, trimmer, pots — see below).
+## Files (build doc = default)
 
-## Digi-Key
+| File | Use |
+|------|-----|
+| **`mouser-bom-paragon-builddoc.csv`** | Mouser BOM Tool: map **Manufacturer Part Number** + **Quantity**. |
+| **`digikey-bom-paragon-builddoc.csv`** | Digi-Key myLists / BOM import. |
+| **`tayda-quick-order-template.csv`** | One line per part: fill **Tayda_SKU** from [taydaelectronics.com](https://www.taydaelectronics.com) or **Paragon_Labels_Tayda.pdf**; paste into Tayda quick order. |
 
-1. [myLists](https://www.digikey.com/en/mylists) / BOM import (or bulk add by manufacturer part number).
-2. Upload `digikey-bom-paragon-warmer.csv` (same content as Mouser file; Digi-Key accepts Manufacturer Part Number + quantity).
+## R3 / R17 — standard vs high gain (BOM note)
 
-## Tayda Electronics
+- **Standard gain:** R3 and R17 = **1 kΩ** → you need **4×** 1 kΩ total (R3, R17, R9, R23).
+- **High-gain option:** R3 and R17 = **100 kΩ** → order **2×** 100 kΩ **and** **2×** 1 kΩ (for R9 and R23 only).
 
-Tayda uses **SKU** codes (e.g. `A-2328`), not universal MPN import. There is no reliable public API here; their site also blocks automated scraping.
+The build-doc CSVs include **4×** `MFR-25FTE52-1K` **and** **2×** `MFR-25FTE52-100K`. For **one** build, **delete or set qty to 0** for the pair you do not need (either drop two of the 1 kΩ lines if using 100 kΩ for R3/R17, or drop the 100 kΩ line if using 1 kΩ for R3/R17).
 
-1. Open `tayda-quick-order-template.csv` — it lists **quantities and descriptions** with an empty **Tayda_SKU** column.
-2. Search each part on [taydaelectronics.com](https://www.taydaelectronics.com) (or use your **Paragon_Labels_Tayda.pdf** from Drive) and fill in the SKU column.
-3. Use Tayda’s **Quick order** page: paste pairs of **SKU** and **qty** (format shown on their site — often one pair per line).
+## Manual lines (same as PDF page 2)
 
-## Parts to add manually (all sites)
+After import, add **pots, trimmers, DIP, header, enclosure, jacks, LED, wire** per the same PDF:
 
-The CSVs intentionally focus on **resistors, caps, ICs, and diodes**. You still need from the [Paragon parts list](https://docs.pedalpcb.com/project/Paragon.pdf):
+- VOL1 / VOL2 — **A100K** 16 mm RA PCB  
+- TONE1 / TONE2 — **B25K** 16 mm RA PCB  
+- DRIVE1 / DRIVE2 — **B100K** 16 mm RA PCB  
+- PRES1 / PRES2 — **50 kΩ** trim (3362P-type per BOM)  
+- DIP — **4-position** DIP switch  
+- PIN HEADER — **9-pin** 2.54 mm male  
 
-| Item | Notes |
-|------|--------|
-| **VOL1, VOL2** | A100K 16 mm right-angle PCB pots |
-| **TONE1, TONE2** | B25K 16 mm RA PCB pots |
-| **DRIVE1, DRIVE2** | B100K 16 mm RA PCB pots |
-| **PRES1, PRES2** | 50k trimmer, 3362P-style per BOM |
-| **DIP** | 4-position DIP switch |
-| **PIN HEADER** | 9-pin 2.54 mm male header |
-| **Enclosure / hardware** | 1590BB per drill template |
-| **LEDs / jacks / DC jack / wire** | Per build guide |
+Match **footprint / pinout** to your Paragon PCB revision.
 
-Search each distributor for **Alpha** or **TTI/Bourns** 16 mm RA pots that match the Paragon footprint (pin spacing matters).
+## Verify at checkout
 
-## Verify before checkout
+- **Manufacturer Part Numbers** resolve in the BOM tool (substitute equivalent metal film / WIMA / Nichicon if a line is EOL).
+- **MA856** — confirm stock; use PedalPCB community subs if needed.
+- **Film box sizes** — BOM lists sizes such as 7.2 × 2.5 mm; pick caps with matching **lead spacing** for your board.
 
-- **CF14JT*** and **RC07GF*** — confirm Stackpole still active; alternates are usually offered at checkout.
-- **MA856** — may be scarce; use substitutions recommended by PedalPCB / your tracing notes.
-- **Film cap dimensions** — Paragon BOM calls out box sizes (e.g. 7.2 × 2.5 mm); substitute **same lead spacing** (typically **5 mm** for small films).
-- **Optional 2.2 µF** — only if you want the warmer C8/C19 mod; check **height** on the board.
+## Optional: warmer carbon film / comp BOM
 
-## Stock-only rollback kit
-
-Order **metal film** (e.g. MFR-25 series) at **same values** and **stock film/ceramic values** from the main `paragon-warm-parts-bom.md` if you want A/B comparison parts.
+For the alternate “warmer” resistor types (carbon film / comp) and optional cap tweaks, see **`paragon-warm-parts-bom.md`** and the secondary files **`mouser-bom-paragon-warmer.csv`** / earlier warmer digikey export if still present — those are **not** the stock build doc.
