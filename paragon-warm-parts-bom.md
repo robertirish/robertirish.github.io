@@ -49,7 +49,7 @@ This document is for **PedalPCB Paragon**–style builds. **Stock values** are t
 
 ### Resistor shopping summary (warmer build)
 
-- **Carbon composition (9 positions if using comps on both channels):** R6, R9, R10, R20, R23, R24 — **6×** total (two identical channels).
+- **Carbon composition:** R6, R9, R10, R20, R23, R24 — **6×** total (three positions × two identical channels).
 - **Carbon film:** All remaining resistor positions (**20×**), using your chosen R3/R17 values (order **two** of whichever standard vs. high-gain values you will solder).
 
 To **keep stock values for A/B swaps**, add **one extra** R3 and R17 in the *other* value (e.g. if you build 1 kΩ, keep two 100 kΩ for experiments).
